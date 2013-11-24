@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://about.zenithar.org"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cv" type="abo:cvType" xmlns:abo="http://about.zenithar.org">
+        <xs:annotation>
+            <xs:documentation>/**
+                * @author Thibault NORMAND (thibault.normand (a) gmail com)
+                * @created 2009-09-18
+                * @version 1.0
+                */
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:complexType name="schoolSummaryType">
+        <xs:sequence>
+            <xs:element type="abo:schoolType" name="school" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="qualificationType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="item" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="name" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="quoteType">
+        <xs:sequence>
+            <xs:element type="abo:i18nType" name="i18n" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="professionalSummaryType">
+        <xs:sequence>
+            <xs:element type="abo:companyType" name="company" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="referencesType">
+        <xs:sequence>
+            <xs:element type="abo:referenceType" name="reference" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="miscType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="item" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="companyType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="name"/>
+            <xs:element type="xs:string" name="url"/>
+            <xs:element type="abo:locationType" name="location" xmlns:abo="http://about.zenithar.org"/>
+            <xs:element type="xs:string" name="dateIn"/>
+            <xs:element type="xs:string" name="dateOut"/>
+            <xs:element type="abo:positionType" name="position" xmlns:abo="http://about.zenithar.org"/>
+            <xs:element type="abo:descriptionType" name="description" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+            <xs:element type="abo:activitiesType" name="activities" xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="itemType">
+        <xs:sequence>
+            <xs:element type="abo:i18nType" name="i18n" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="i18nType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang"/>
+                <xs:attribute type="xs:string" name="lang" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="civilStateType">
+        <xs:sequence>
+            <xs:element type="abo:i18nType" name="i18n" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="birthdayType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="age"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="departementType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="number"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="schoolType">
+        <xs:sequence>
+            <xs:element type="abo:nameType" name="name" xmlns:abo="http://about.zenithar.org"/>
+            <xs:element name="url">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="title" use="optional"/>
+                            <xs:attribute type="xs:string" name="type" use="optional"/>
+                            <xs:attribute type="xs:string" name="desc" use="optional"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element type="abo:locationType" name="location" xmlns:abo="http://about.zenithar.org"/>
+            <xs:element type="xs:string" name="dateIn" minOccurs="0"/>
+            <xs:element type="xs:string" name="dateOut"/>
+            <xs:element type="xs:string" name="diploma"/>
+            <xs:element type="xs:string" name="course"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="addressType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="home"/>
+            <xs:element type="xs:string" name="street"/>
+            <xs:element type="xs:string" name="postal"/>
+            <xs:element type="xs:string" name="city"/>
+            <xs:element type="xs:string" name="country"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="urlsType">
+        <xs:sequence>
+            <xs:element type="abo:urlType" name="url" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="descriptionType">
+        <xs:sequence>
+            <xs:element type="abo:i18nType" name="i18n" xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="titleType">
+        <xs:sequence>
+            <xs:element type="abo:i18nType" name="i18n" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="locationType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="city"/>
+            <xs:element type="xs:string" name="country"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="activitiesType">
+        <xs:sequence>
+            <xs:element type="abo:itemType" name="item" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="referenceType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="firstName"/>
+            <xs:element type="xs:string" name="lastName"/>
+            <xs:element type="xs:string" name="society"/>
+            <xs:element type="xs:string" name="email"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="jobid" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="certificationsType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="certification"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="qualificationsType">
+        <xs:sequence>
+            <xs:element type="abo:qualificationType" name="qualification" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="personalDataType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="firstName"/>
+            <xs:element type="xs:string" name="lastName"/>
+            <xs:element type="abo:civilStateType" name="civilState" xmlns:abo="http://about.zenithar.org"/>
+            <xs:element type="xs:string" name="email"/>
+            <xs:element type="abo:phoneType" name="phone" xmlns:abo="http://about.zenithar.org"/>
+            <xs:element type="abo:titleType" name="title" xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>CV Title</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="abo:addressType" name="address" xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>Address</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="abo:birthdayType" name="birthday" xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>When / Where are you born</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="abo:birthlocationType" name="birthlocation" xmlns:abo="http://about.zenithar.org"/>
+            <xs:element type="abo:urlsType" name="urls" xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>Urls</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="abo:quoteType" name="quote" xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="cvType">
+        <xs:sequence>
+            <xs:element type="abo:resumeType" name="resume" xmlns:abo="http://about.zenithar.org"/>
+            <xs:element type="abo:personalDataType" name="personalData" xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>Personal Data</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="abo:professionalSummaryType" name="professionalSummary"
+                        xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>Professional Summary</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="abo:schoolSummaryType" name="schoolSummary" xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>School Summary</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="abo:languagesType" name="languages" xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>Languages</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="abo:qualificationsType" name="qualifications" xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>Qualifications</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="abo:miscType" name="misc" xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>Hobbies</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="abo:certificationsType" name="certifications" xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>Certifications</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="abo:referencesType" name="references" xmlns:abo="http://about.zenithar.org">
+                <xs:annotation>
+                    <xs:documentation>References</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="author"/>
+    </xs:complexType>
+    <xs:complexType name="positionType">
+        <xs:sequence>
+            <xs:element type="abo:i18nType" name="i18n" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="phoneType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="type"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="languageType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="name"/>
+            <xs:element type="xs:string" name="level"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="languagesType">
+        <xs:sequence>
+            <xs:element type="abo:languageType" name="language" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="nameType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="desc" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="urlType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="title" use="optional"/>
+                <xs:attribute type="xs:string" name="type" use="optional"/>
+                <xs:attribute type="xs:string" name="desc" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="birthlocationType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="city"/>
+            <xs:element type="abo:departementType" name="departement" xmlns:abo="http://about.zenithar.org"/>
+            <xs:element type="xs:string" name="country"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="resumeType">
+        <xs:sequence>
+            <xs:element type="abo:i18nType" name="i18n" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:abo="http://about.zenithar.org"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
