@@ -217,7 +217,7 @@
 			<div id="menus" class="row">
 				<div id="navigation" class="col_13 col">
 					<ul class="">
-						<li><a href="#about">A propos</a></li>
+						<li class="selected"><a href="#about">A propos</a></li>
 						<li><a href="#professional">Expérience</a></li>
 						<li><a href="#education">Formation</a></li>
 						<li class="last"><a href="#skills">Compétences</a></li>
@@ -249,14 +249,14 @@
 				<ul class="social">
 					<li class="facebook"><a href="http://www.facebook.com/zenithar" rel="me">Facebook</a></li>
 					<li class="twitter"><a href="http://twitter.com/zenithar">Twitter</a></li>
-					<li class="googleplus">Google+</li>
+					<li class="googleplus"><a href="https://plus.google.com/+ThibaultNormand/">Google+</a></li>
 				</ul>
 			</div>
 			<div class="col_4 col">
 				<ul class="social">
-					<li class="email">Email</li>
-					<li class="blog"><a href="http://www.zenithar.org" rel="me">Blog</a></li>
-					<li class="rss">Rss</li>
+					<li class="email"><a href="http://www.google.com/recaptcha/mailhide/d?k=01IIc-s5LNYiS-CG_gthn4PA==&amp;c=r5Ctx8RMDz422qmYESfk1g==">Email</a></li>
+					<li class="blog"><a href="http://blog.zenithar.org" rel="me">Blog</a></li>
+					<li class="rss"><a href="http://feeds.feedburner.com/ZenitharOrg" rel="me">Rss</a></li>
 				</ul>
 			</div>
 		</section>
