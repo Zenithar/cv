@@ -1,71 +1,523 @@
-<!doctype html>
-<html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns:zorg="http://about.zenithar.org" xml:lang="fr">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Cv by Zenithar</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="author" content="Thibault NORMAND"/>
+    <meta charset="UTF-8"/>
+    <script src="js/modernizr-1.7.min.js">//</script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/css3.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/general.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8">//</script>
+    <script src="js/cvcard.js" type="text/javascript" charset="utf-8">//</script>
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Cv</h1>
-        <p>Curriculum Vitae</p>
-
-        <p class="view"><a href="https://github.com/Zenithar/cv">View the Project on GitHub <small>Zenithar/cv</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/Zenithar/cv/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/Zenithar/cv/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/Zenithar/cv">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/Zenithar">Zenithar</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+  <body class="fontface">
+    <header>
+      <nav>
+        <div id="menus" class="row">
+          <div id="navigation" class="col_13 col">
+            <ul class="">
+              <li class="selected">
+                <a href="#about">A propos</a>
+              </li>
+              <li>
+                <a href="#professional">Expérience</a>
+              </li>
+              <li>
+                <a href="#education">Formation</a>
+              </li>
+              <li class="last">
+                <a href="#skills">Compétences</a>
+              </li>
+            </ul>
+          </div>
+          <div class="file col">
+            <ul>
+              <li class="pdf">
+                <a href="cv-fr.pdf"> </a>
+              </li>
+              <li class="docx">
+                <a href="cv-fr.docx"> </a>
+              </li>
+              <li class="last rtf">
+                <a href="cv-fr.rtf"> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+      <img src="img/head.png" class="logo" alt="Thibault NORMAND"/>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <div id="content" class="row">
+      <section id="about">
+        <div class="resume col_8 col">Développeur de formation et Ingénieur sécurité passionné, j'apporte un regard particulier sur l'utilisation de produits libres dans l'entreprise et surtout dans le domaine de la sécurité. Mon expérience en sécurité cumulée à celle de développeur me permet d'avoir un regard différent et surtout d'être sensibilisé aux techniques liées à la sécurité. Je suis en veille technologique permanente car toujours à la recherche du "meilleur tournevis".</div>
+        <div class="col_4 col">
+          <ul class="social">
+            <li class="facebook">
+              <a href="http://www.facebook.com/zenithar" rel="me">Facebook</a>
+            </li>
+            <li class="twitter">
+              <a href="http://twitter.com/zenithar">Twitter</a>
+            </li>
+            <li class="googleplus">
+              <a href="https://plus.google.com/+ThibaultNormand/">Google+</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col_4 col">
+          <ul class="social">
+            <li class="email">
+              <a href="http://www.google.com/recaptcha/mailhide/d?k=01IIc-s5LNYiS-CG_gthn4PA==&amp;c=r5Ctx8RMDz422qmYESfk1g==">Email</a>
+            </li>
+            <li class="blog">
+              <a href="http://blog.zenithar.org" rel="me">Blog</a>
+            </li>
+            <li class="rss">
+              <a href="http://feeds.feedburner.com/ZenitharOrg" rel="me">Rss</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="professional">
+        <article class="experience">
+          <div class="article_title">
+            <div class="title">
+              <span class="job-org">Privé</span>
+            </div>
+            <div class="location"><span class="city">Toulouse</span> - <span class="country">France</span></div>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">Architecte Technique / Consultant Sécurité</span>
+            </div>
+            <div style="float: right;"><span class="from">Octobre 2013</span> - 
+					<span class="to"> </span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Audit de code (Java)</li>
+              <li>Conception d'outils de correlation d'évènements sécurité (CEP, BigData, Scala)</li>
+              <li>Industrialisation des processus de gestion critique de parc hétérogène à très grande échelle &gt;100 000 assets en production (Python, Django, Celery)</li>
+            </ul>
+          </div>
+        </article>
+        <article class="experience">
+          <div class="article_title">
+            <div class="title">
+              <span class="job-org">INFOTEL</span>
+            </div>
+            <div class="location"><span class="city">Toulouse</span> - <span class="country">France</span></div>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">Ingénieur R&amp;D / Chef de Projet</span>
+            </div>
+            <div style="float: right;"><span class="from">Janvier 2010</span> - 
+					<span class="to">Octobre 2013</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Conception et réalisation d'une plateforme web distribuée haute disponibilité (RabbitMQ, Protobuf, Scala / AKKA, Java, Spring, REST, ElasticSearch, AngularJS)</li>
+              <li>Conception d'un SSO basé sur OAUTH 2.0 (Java, Spring, JWT, PKI, PKCS#11, HOTP)</li>
+              <li>Développements d'applications Javascript (jQuery, Backbone.JS, CoffeeScript).</li>
+              <li>Industrialisation de l'intégration continue (Git, Jenkins, Sonar)</li>
+              <li>Industrialisation de la chaîne documentaire (Git, Jenkins, Maven, Docbook5, XSLT, FOP)</li>
+              <li>Interfaces de gestion de processus DB2 / Z/OS (Java, Portlets)</li>
+              <li>Maintenance de produits (ClearCase, Java, Struts2, Eclipse RCP)</li>
+            </ul>
+          </div>
+        </article>
+        <article class="experience">
+          <div class="article_title">
+            <div class="title">
+              <span class="job-org">SCASSI Conseil</span>
+            </div>
+            <div class="location"><span class="city">Toulouse</span> - <span class="country">France</span></div>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">Ingénieur Sécurité</span>
+            </div>
+            <div style="float: right;"><span class="from">Juillet 2008</span> - 
+					<span class="to">Décembre 2009</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Conception d'un outil d'analyse de risques basé sur la méthodologie EBIOS (SOA, J2EE, .Net)</li>
+              <li>Généralisation des méthodes d'analyse de risques (UML)</li>
+              <li>Audit de code (Java/J2EE, C/C++, PHP)</li>
+              <li>Reverse engineering, analyse de malware</li>
+              <li>SOC (Security Operating Center) auprès d'un grand compte (Gestion des événements sécurité, gestion des requêtes sécurité, maintien en condition opérationnelle)</li>
+              <li>Instructeur pour des ateliers techniques (Virtualisation / Firewall &amp; Contrôles d'accès) auprès d'une vingtaine de personnes</li>
+            </ul>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">Stagiaire</span>
+            </div>
+            <div style="float: right;"><span class="from">Octobre 2007</span> - 
+					<span class="to">Juin 2008</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Conception d'un outil d'analyse de risques basé sur la méthodologie EBIOS (Ruby on Rails)</li>
+              <li>Administration système et réseau dans un environnement hétérogène</li>
+              <li>Penetration Testing sur applications Web</li>
+            </ul>
+          </div>
+        </article>
+        <article class="experience">
+          <div class="article_title">
+            <div class="title">
+              <span class="job-org">Opencube Technologies</span>
+            </div>
+            <div class="location"><span class="city">Toulouse</span> - <span class="country">France</span></div>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">Stagiaire</span>
+            </div>
+            <div style="float: right;"><span class="from">Mars 2007</span> - 
+					<span class="to">Septembre 2007</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Réalisation d'une API d'exploitation de format d'échange de sous-titre DFXP</li>
+              <li>Traitement du signal pour récupération de signaux télétexte</li>
+              <li>Conception UML2, programmation multiplateforme C++ / Qt</li>
+            </ul>
+          </div>
+        </article>
+        <article class="experience">
+          <div class="article_title">
+            <div class="title">
+              <span class="job-org">MEDES / IMPS</span>
+            </div>
+            <div class="location"><span class="city">Toulouse</span> - <span class="country">France</span></div>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">Stagiaire</span>
+            </div>
+            <div style="float: right;"><span class="from">Mars 2006</span> - 
+					<span class="to">Aout 2006</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Conception d'un composant graphique Java / Eclipse / RCP</li>
+              <li>Etat de l'art des systèmes SIG libre (PostGIS, GRASS)</li>
+              <li>Architecture réseau, mise en place d'un domaine libre (OpenLDAP, Samba, Kerberos)</li>
+              <li>Virtualisation Serveurs (Xen, VMWare)</li>
+            </ul>
+          </div>
+        </article>
+        <article class="experience">
+          <div class="article_title">
+            <div class="title">
+              <span class="job-org">Karobas</span>
+            </div>
+            <div class="location"><span class="city">Sophia Antipolis</span> - <span class="country">France</span></div>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">Stagiaire</span>
+            </div>
+            <div style="float: right;"><span class="from">Mars 2005</span> - 
+					<span class="to">Septembre 2005</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Conception / Restructuration du réseau de l'entreprise</li>
+              <li>Service Haute-Disponibilité, Sécurité</li>
+              <li>Mise en service Exchange 2003</li>
+              <li>Migration du système SGDB (SQLServer - MySQL), migration applicative associée</li>
+              <li>Modélisation mondes ludo-educatifs (Virtools)</li>
+            </ul>
+          </div>
+        </article>
+        <article class="experience">
+          <div class="article_title">
+            <div class="title">
+              <span class="job-org">Nice-Antiques.com</span>
+            </div>
+            <div class="location"><span class="city">Nice</span> - <span class="country">France</span></div>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">Stagiaire</span>
+            </div>
+            <div style="float: right;"><span class="from">Mars 2004</span> - 
+					<span class="to">Juillet 2004</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Conception d'un site web dynamique (PHP / MySQL)</li>
+              <li>Optimisation du référencement commercial</li>
+              <li>Techniques de communication</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section id="education">
+        <article class="formation">
+          <div class="article_title">
+            <div class="title">
+              <span class="school-name">IUP ISI</span>
+            </div>
+            <div class="location"><span class="city">Toulouse</span> - <span class="country">France</span></div>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">M2 ISI - Métamodélisation et Temps réel critique</span>
+            </div>
+            <div style="float: right;"><span class="from">Septembre 2007</span> - 
+					<span class="to">Septembre 2008</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Métamodélisation UML, J2EE, Programmation temps réel (ADA, C, SCADE), Droit</li>
+            </ul>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">M1 Ingénierie des Systèmes Informatiques (ISI)</span>
+            </div>
+            <div style="float: right;"><span class="from">Septembre 2006</span> - 
+					<span class="to">Septembre 2007</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>UML, Programmation distribuée (Java / J2EE, C), Base de données (avancé), XML, Mathématiques, Gestion</li>
+            </ul>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">L3 Ingénierie des Systèmes Informatiques (ISI)</span>
+            </div>
+            <div style="float: right;"><span class="from">Septembre 2005</span> - 
+					<span class="to">Septembre 2006</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>UML, Programmation (Java, C++), Base de données, Mathématiques, Gestion</li>
+            </ul>
+          </div>
+        </article>
+        <article class="formation">
+          <div class="article_title">
+            <div class="title">
+              <span class="school-name">IUT Informatique</span>
+            </div>
+            <div class="location"><span class="city">Nice</span> - <span class="country">France</span></div>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">Licence Professionelle, Administration des systèmes et des réseaux (ASR)</span>
+            </div>
+            <div style="float: right;"><span class="from">Septembre 2004</span> - 
+					<span class="to">Septembre 2005</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Réseau, Administration système (Unix, Windows) / base de données (Oracle), Mathématiques, Gestion, Droit</li>
+            </ul>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">DUT Informatique, Génie Logiciel</span>
+            </div>
+            <div style="float: right;"><span class="from">Septembre 2002</span> - 
+					<span class="to">Septembre 2004</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Réseau, Base de données, C, Java/C++, Programmation système, Mathématiques, Gestion</li>
+            </ul>
+          </div>
+        </article>
+        <article class="formation">
+          <div class="article_title">
+            <div class="title">
+              <span class="school-name">Lycée A. Camus</span>
+            </div>
+            <div class="location"><span class="city">Fréjus</span> - <span class="country">France</span></div>
+          </div>
+          <div class="article_subtitle">
+            <div style="float:left">
+              <span class="job-name">Bac S Sience de l'ingénieur, Spécialité Mathématiques</span>
+            </div>
+            <div style="float: right;"><span class="from"/> - 
+					<span class="to">Juillet 2002</span></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Mathématiques, Electronique, Mécanique, Informatique</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section id="skills" class="hidden">
+        <article class="formation">
+          <div class="article_title">
+            <div class="title">
+              <span class="skill-category">Langages</span>
+            </div>
+          </div>
+          <div class="article_subtitle"> </div>
+          <div class="content">
+            <ul>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>Scala</li>
+              <li>Ruby</li>
+              <li>Python</li>
+              <li>PHP</li>
+              <li>XML</li>
+              <li>XSLT</li>
+              <li>XML Schema</li>
+              <li>Relax NG</li>
+              <li>Schematron</li>
+              <li>XProc</li>
+              <li>XSL-FO</li>
+              <li>C/C++</li>
+              <li>Qt / KDE</li>
+              <li>C# (.Net)</li>
+              <li>ASM (x86, ARM7)</li>
+            </ul>
+          </div>
+        </article>
+        <article class="formation">
+          <div class="article_title">
+            <div class="title">
+              <span class="skill-category">Java</span>
+            </div>
+          </div>
+          <div class="article_subtitle"> </div>
+          <div class="content">
+            <ul>
+              <li>J2EE</li>
+              <li>Spring (Core, MVC, Security, Data)</li>
+              <li>Ant</li>
+              <li>Maven</li>
+              <li>SBT</li>
+              <li>JPA</li>
+              <li>Hibernate</li>
+              <li>JUnit</li>
+              <li>TestNG</li>
+              <li>JBoss</li>
+              <li>Tomcat</li>
+              <li>ElasticSearch</li>
+            </ul>
+          </div>
+        </article>
+        <article class="formation">
+          <div class="article_title">
+            <div class="title">
+              <span class="skill-category">Base de données</span>
+            </div>
+          </div>
+          <div class="article_subtitle"> </div>
+          <div class="content">
+            <ul>
+              <li>MySQL / MariaDB</li>
+              <li>PostgreSQL</li>
+              <li>Oracle</li>
+              <li>SQL Server</li>
+              <li>CouchDB</li>
+              <li>MongoDB</li>
+              <li>HBase</li>
+              <li>Redis</li>
+            </ul>
+          </div>
+        </article>
+        <article class="formation">
+          <div class="article_title">
+            <div class="title">
+              <span class="skill-category">Système d'exploitation</span>
+            </div>
+          </div>
+          <div class="article_subtitle"> </div>
+          <div class="content">
+            <ul>
+              <li>MacOS X</li>
+              <li>Linux</li>
+              <li>Windows</li>
+            </ul>
+          </div>
+        </article>
+        <article class="formation">
+          <div class="article_title">
+            <div class="title">
+              <span class="skill-category">Environnements de développement</span>
+            </div>
+          </div>
+          <div class="article_subtitle"> </div>
+          <div class="content">
+            <ul>
+              <li>Git</li>
+              <li>Mercurial</li>
+              <li>SVN</li>
+              <li>CVS</li>
+              <li>CMake</li>
+              <li>Autotools</li>
+              <li>VisualStudio</li>
+              <li>XCode</li>
+            </ul>
+          </div>
+        </article>
+        <article class="formation">
+          <div class="article_title">
+            <div class="title">
+              <span class="skill-category">Sécurité</span>
+            </div>
+          </div>
+          <div class="article_subtitle"> </div>
+          <div class="content">
+            <ul>
+              <li>EBIOS</li>
+              <li>MEHARI</li>
+              <li>Reverse engineering (Windows, MacOS)</li>
+              <li>IDA Pro</li>
+              <li>OllyDbg</li>
+              <li>MetaSploit</li>
+            </ul>
+          </div>
+        </article>
+        <article class="formation">
+          <div class="article_title">
+            <div class="title">
+              <span class="skill-category">Internet 2.0</span>
+            </div>
+          </div>
+          <div class="article_subtitle"> </div>
+          <div class="content">
+            <ul>
+              <li>Ruby on Rails</li>
+              <li>Play! Framework</li>
+              <li>Spray.io</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Backbone.JS</li>
+              <li>AngularJS</li>
+              <li>Yeoman</li>
+              <li>jQuery</li>
+              <li>CoffeeScript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Microformats</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>
+    <footer class="row">
+      <p>
+        <a href="http://zenithar.org">http://zenithar.org</a>
+      </p>
+    </footer>
   </body>
 </html>
