@@ -45,15 +45,15 @@ footer {text-align:center; color:#666; font-size:0.9em; padding:4px 0px;}
 nav { margin: 0 auto; background: #454546; clear: both; height: 31px; padding-top: 20px; }
 
 .experience .title, .location, .period { float: left; }
-.experience .title { width: 33%; text-align: left;}
-.experience .location { width: 33%; text-align: center; }
-.experience .period { width: 33%; text-align: right; }
+.experience .title { width: 66%; text-align: left; }
+.experience .location { width: 34%; text-align: right; }
+.experience .period { width: 34%; text-align: right; }
 .experience .content { clear: left; }
 
 .formation .title, .location, .period { float: left; }
-.formation .title { width: 33%; text-align: left;}
-.formation .location { width: 33%; text-align: center; }
-.formation .period { width: 33%; text-align: right; }
+.formation .title { width: 66%; text-align: left;}
+.formation .location { width: 34%; text-align: right; }
+.formation .period { width: 34%; text-align: right; }
 .formation .content { clear: left; }
 
 .hidden { display: none; }

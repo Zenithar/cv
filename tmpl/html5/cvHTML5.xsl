@@ -20,7 +20,7 @@
 ]>
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:zorg="http://cv.zenithar.org">
+    xmlns:zorg="http://about.zenithar.org">
 
 	<xsl:output
 		 method="xml"
@@ -110,13 +110,16 @@
 				<div class="location">
 					<span class="city"><xsl:value-of select="zorg:location/zorg:city" /></span> - <span class="country"><xsl:value-of select="zorg:location/zorg:country" /></span>
 				</div>
-				<div class="period">
+			</div>
+			<xsl:for-each select="zorg:positions/zorg:position">
+			<div class="article_subtitle">
+				<div style="float:left">
+					<span class="job-name"><xsl:value-of select="zorg:title/zorg:i18n" /></span>
+				</div>
+				<div style="float: right;">
 					<span class="from"><xsl:call-template name="formatDate"><xsl:with-param name="format" select="'other'" /><xsl:with-param name="date" select="zorg:dateIn" /></xsl:call-template></span> - 
 					<span class="to"><xsl:call-template name="formatDate"><xsl:with-param name="date" select="zorg:dateOut" /></xsl:call-template></span>
 				</div>
-			</div>
-			<div class="article_subtitle">
-				<span class="job-name"><xsl:apply-templates select="zorg:position/zorg:i18n" /></span>
 			</div>
 			<div class="content">
 				<ul>
@@ -125,6 +128,7 @@
 				</xsl:for-each>
 				</ul>
 			</div>
+			</xsl:for-each>
 		</article>
 		
 		</xsl:for-each>
@@ -142,19 +146,23 @@
 				<div class="location">
 					<span class="city"><xsl:value-of select="zorg:location/zorg:city" /></span> - <span class="country"><xsl:value-of select="zorg:location/zorg:country" /></span>
 				</div>
-				<div class="period">
+			</div>
+			<xsl:for-each select="zorg:diplomas/zorg:diploma">
+			<div class="article_subtitle">
+				<div style="float:left">
+					<span class="job-name"><xsl:value-of select="zorg:title" /></span>
+				</div>
+				<div style="float: right;">
 					<span class="from"><xsl:call-template name="formatDate"><xsl:with-param name="format" select="'other'" /><xsl:with-param name="date" select="zorg:dateIn" /></xsl:call-template></span> - 
 					<span class="to"><xsl:call-template name="formatDate"><xsl:with-param name="date" select="zorg:dateOut" /></xsl:call-template></span>
 				</div>
-			</div>
-			<div class="article_subtitle">
-				<span class="job-name"><xsl:value-of select="zorg:diploma" /></span>
 			</div>
 			<div class="content">
 				<ul>
 					<li><xsl:value-of select="zorg:course" /></li>
 				</ul>
 			</div>
+			</xsl:for-each>
 		</article>
 
 		</xsl:for-each>
@@ -163,6 +171,21 @@
 	<!-- Qualifications -->
 	<xsl:template match="zorg:cv/zorg:qualifications">
 		<xsl:for-each select="zorg:qualification">
+		<article class="formation">
+			<div class="article_title">
+				<div class="title">
+					<span class="skill-category"><xsl:value-of select="@name" /></span>
+				</div>
+			</div>
+			<div class="article_subtitle">&nbsp;</div>
+			<div class="content">
+				<ul>
+        	<xsl:for-each select="zorg:item">
+					<li><xsl:value-of select="." /></li>
+			</xsl:for-each>
+				</ul>
+			</div>
+		</article>
 		</xsl:for-each>
 	</xsl:template>
 			
@@ -176,7 +199,7 @@
 	<meta name="author" content="Thibault NORMAND" />
 	<meta charset="UTF-8" />
 	
-	<script src="js/modernizr-1.7.min.js"></script>    
+	<script src="js/modernizr-1.7.min.js">//</script>   
     <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/css3.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/general.css" media="screen" />
@@ -184,8 +207,8 @@
     
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 	
-    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/cvcard.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8">//</script>
+	<script src="js/cvcard.js" type="text/javascript" charset="utf-8">//</script>
 </head>
 
 <body class="fontface">
