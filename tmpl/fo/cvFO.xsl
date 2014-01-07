@@ -117,7 +117,7 @@
 		<xsl:for-each select="zorg:company">
 		
 		<fo:block space-before="4pt" space-after="8pt">
-        <fo:table >
+        <fo:table keep-together.within-column="always">
           <fo:table-column column-number="1" column-width="66%"/>
           <fo:table-column column-number="2" column-width="34%"/>  
           <fo:table-body>
@@ -167,7 +167,7 @@
 		<xsl:for-each select="zorg:school">
 		
 		  <fo:block space-before="4pt" space-after="8pt">
-        <fo:table>
+        <fo:table keep-together.within-column="always">
           <fo:table-column column-number="1" column-width="66%"/>
           <fo:table-column column-number="2" column-width="34%"/>
           <fo:table-body>
