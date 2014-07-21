@@ -225,9 +225,7 @@
 				</div>
 				<div class="file col">
 					<ul>
-						<li class="pdf"><a href="cv-fr.pdf">&nbsp;</a></li>
-						<li class="docx"><a href="cv-fr.docx">&nbsp;</a></li>
-						<li class="last rtf"><a href="cv-fr.rtf">&nbsp;</a></li>
+						<li class="last pdf"><a href="cv-fr.pdf">&nbsp;</a></li>
 					</ul>
 				</div>
 			</div>
