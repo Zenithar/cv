@@ -193,12 +193,38 @@
 	<!-- Cv -->
 	
 	<xsl:template match="/">
-<html xml:lang="fr">
+<html>
 
 <head>
-	<meta name="author" content="Thibault NORMAND" />
-	<meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Zenithar.org</title>
+    <meta name="description" content="Thibault NORMAND (Blog, CV, et le reste)" />
 	
+	<meta itemprop="name" content="Zenithar.org" />
+	<meta itemprop="description" content="Thibault NORMAND (Blog, CV, et le reste)" />
+
+	<meta property="og:type" content="website" />
+    <meta property="og:title" content="Zenithar.org" />
+    <meta property="og:description" content="Thibault NORMAND (Blog, CV, et le reste)" />
+    <meta property="og:url" content="http://zenithar.org" />
+    <meta property="og:locale" content="fr" />
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Zenithar.org" />
+    <meta property="twitter:description" content="Thibault NORMAND (Blog, CV, et le reste)" />
+    <meta property="twitter:creator" content="@zenithar" />
+    <meta property="twitter:site" content="@zenithar" />
+
+    <meta property="profile:first_name" content="Thibault" />
+    <meta property="profile:last_name" content="Normand" />
+    <meta property="profile:gender" content="male" />
+    <meta property="profile:username" content="zenithar" />
+
+    <link rel="canonical" href="http://zenithar.org" />
+
 	<script src="js/modernizr-1.7.min.js">//</script>   
     <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/css3.css" media="screen" />
@@ -246,8 +272,8 @@
 			<div class="col_4 col">
 				<ul class="social">
 					<li class="facebook"><a href="http://www.facebook.com/zenithar" rel="me">Facebook</a></li>
-					<li class="twitter"><a href="http://twitter.com/zenithar">Twitter</a></li>
-					<li class="googleplus"><a href="https://plus.google.com/+ThibaultNormand/">Google+</a></li>
+					<li class="twitter"><a href="http://twitter.com/zenithar" rel="me">Twitter</a></li>
+					<li class="googleplus"><a href="https://plus.google.com/+ThibaultNormand/" rel="author">Google+</a></li>
 				</ul>
 			</div>
 			<div class="col_4 col">
@@ -280,7 +306,7 @@
 	</div>
 	
 	<footer class="row">
-		<p><a href="http://zenithar.org">http://zenithar.org</a></p>
+		<p><a rel="me" href="http://zenithar.org">http://zenithar.org</a></p>
 	</footer>
 </body>
 
