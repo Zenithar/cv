@@ -17,9 +17,9 @@
 	    method="xml"
 	    encoding="UTF-8"
 	    indent="yes" />
-	
+
 	<xsl:param name="OutLang">fr</xsl:param>
-	
+
 	<!-- Functions -->
 	<xsl:template name="formatDate">
 		    <xsl:param name="date" />
@@ -81,20 +81,20 @@
 		        </xsl:choose>
 		    </xsl:if>
 	</xsl:template>
-	
+
 	<xsl:template match="zorg:i18n">
   		<xsl:if test="lang($OutLang)">
    			<xsl:value-of select="."/>
   		</xsl:if>
  	</xsl:template>
-		
+
 	<!-- Personal Data -->
 	<xsl:template match="zorg:cv/zorg:personalData">
-	
+
 	  <fo:block border-after-style="double" border-after-width="medium" font-size="200%" letter-spacing=".15em" font-variant="small-caps">
             <xsl:value-of select="concat(zorg:firstName, ' ', zorg:lastName)" />
       </fo:block>
-            
+
       <fo:table space-before="4pt">
         <fo:table-column column-width="50%"/>
         <fo:table-column column-width="50%"/>
@@ -109,17 +109,17 @@
           </fo:table-row>
         </fo:table-body>
       </fo:table>
-      
+
 	</xsl:template>
-	
+
 	<!-- Professional Summary -->
 	<xsl:template match="zorg:cv/zorg:professionalSummary">
 		<xsl:for-each select="zorg:company">
-		
+
 		<fo:block space-before="4pt" space-after="8pt">
         <fo:table keep-together.within-column="always">
           <fo:table-column column-number="1" column-width="66%"/>
-          <fo:table-column column-number="2" column-width="34%"/>  
+          <fo:table-column column-number="2" column-width="34%"/>
           <fo:table-body>
             <fo:table-row font-weight="bold">
               <fo:table-cell text-align="left">
@@ -158,14 +158,14 @@
           </fo:table-body>
         </fo:table>
       </fo:block>
-      
+
 		</xsl:for-each>
 	</xsl:template>
-	
+
 	<!-- School Summary -->
 	<xsl:template match="zorg:cv/zorg:schoolSummary">
 		<xsl:for-each select="zorg:school">
-		
+
 		  <fo:block space-before="4pt" space-after="8pt">
         <fo:table keep-together.within-column="always">
           <fo:table-column column-number="1" column-width="66%"/>
@@ -208,7 +208,7 @@
       </fo:block>
 		</xsl:for-each>
 	</xsl:template>
-	
+
 	<!-- Languages -->
 	<xsl:template match="zorg:cv/zorg:languages">
     <fo:list-block margin-left="12pt" font-size="80%">
@@ -224,7 +224,7 @@
      </xsl:for-each>
      </fo:list-block>
 	</xsl:template>
-	
+
 	<!-- Qualifications -->
 	<xsl:template match="zorg:cv/zorg:qualifications">
 		<xsl:for-each select="zorg:qualification">
@@ -236,7 +236,7 @@
 			</fo:block>
     </xsl:for-each>
 	</xsl:template>
-	
+
 	<!-- Certifications -->
 	<xsl:template match="zorg:cv/zorg:certifications">
 		<fo:list-block margin-left="12pt" font-size="80%">
@@ -252,7 +252,7 @@
     </xsl:for-each>
     </fo:list-block>
 	</xsl:template>
-	
+
 	<!-- References -->
 	<xsl:template match="zorg:cv/zorg:references">
 		<fo:list-block margin-left="12pt">
@@ -268,7 +268,7 @@
     </xsl:for-each>
     </fo:list-block>
 	</xsl:template>
-	
+
 	<!-- Misc -->
 	<xsl:template match="zorg:cv/zorg:misc">
 		<fo:list-block margin-left="12pt">
@@ -284,10 +284,10 @@
     </xsl:for-each>
     </fo:list-block>
 	</xsl:template>
-	
+
 	<!-- ************************************************************************************************* -->
 	<!-- Cv -->
-	
+
 	<xsl:template match="/">
     <fo:root writing-mode="lr-tb" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 
@@ -303,7 +303,7 @@
       <fo:static-content flow-name="page-footer">
         <fo:block font-size="6pt" text-align="center" space-after.conditionality="retain" space-after="0.25in">
           <fo:block space-before="0.67em" border="1px solid" space-before.minimum="0.5em" space-before.optimum="0.67em" space-before.maximum="0.92em" space-after.minimum="0.5em" space-after.optimum="0.67em" space-after.maximum="0.92em" />
-          
+
           <fo:table>
             <fo:table-column column-width="50%"/>
             <fo:table-column column-width="50%"/>
@@ -324,13 +324,13 @@
       </fo:static-content>
 
 		  <fo:flow flow-name="xsl-region-body" font-size="80%">
-  
+
         <!-- Header -->
         <fo:block-container>
              <xsl:apply-templates select="zorg:cv/zorg:personalData" />
         </fo:block-container>
         <!-- /Header -->
-				
+
         <!-- Title -->
         <fo:block-container space-before="12pt" id="title">
           <fo:block text-align="center" font-weight="bold" space-before="4pt" space-after="0pt" font-size="150%">
@@ -347,21 +347,21 @@
           </fo:block>
         </fo:block-container>
         <!-- /Résumé -->
-			
+
 			  <!-- Experiences -->
         <fo:block-container space-before="12pt" id="experiences">
           <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Expérience Professionnelle</fo:block>
           <xsl:apply-templates select="zorg:cv/zorg:professionalSummary" />
         </fo:block-container>
     		<!-- /Experiences -->
-    		
+
     		<!-- Formations -->
         <fo:block-container space-before="12pt" id="education">
           <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Formation</fo:block>
           <xsl:apply-templates select="zorg:cv/zorg:schoolSummary" />
         </fo:block-container>
         <!-- /Formations -->
-		      
+
 				<!-- Certification -->
 				<fo:block-container space-before="12pt" id="certifications">
           <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Certifications</fo:block>
@@ -370,7 +370,7 @@
           </fo:block>
         </fo:block-container>
 				<!-- /Certification -->
-				
+
 				<!-- languages -->
 				<fo:block-container space-before="12pt" id="languages">
           <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Langues</fo:block>
@@ -379,7 +379,7 @@
           </fo:block>
         </fo:block-container>
 				<!-- /languages -->
-				
+
 				<!-- competences / skills -->
         <fo:block-container space-before="12pt" id="skills">
           <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Compétences</fo:block>
@@ -388,7 +388,7 @@
           </fo:block>
         </fo:block-container>
 				<!-- competences / skills -->
-				
+
 				<!-- References -->
 	    <fo:block-container space-before="12pt" id="references" keep-together="always">
           <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Références</fo:block>
@@ -406,14 +406,14 @@
           </fo:block>
         </fo:block-container>
         <!-- /Misc -->
-				
+
         <fo:block id="last-page-marker" />
       </fo:flow>
-  	
+
     </fo:page-sequence>
   </fo:root>
-  
+
 	</xsl:template>
-	
-	
+
+
 </xsl:stylesheet>
