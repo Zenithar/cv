@@ -13,7 +13,7 @@
 	<!ENTITY trade  "&#8482;">
 	<!ENTITY mdash  "&#8212;">
 	<!ENTITY ldquo  "&#8220;">
-	<!ENTITY rdquo  "&#8221;"> 
+	<!ENTITY rdquo  "&#8221;">
 	<!ENTITY pound  "&#163;">
 	<!ENTITY yen    "&#165;">
 	<!ENTITY euro   "&#8364;">
@@ -27,9 +27,9 @@
 		 doctype-system="about:legacy-compat"
 		 encoding="UTF-8"
 		 indent="yes" />
-	
+
 	<xsl:param name="OutLang">fr</xsl:param>
-	
+
 	<!-- Functions -->
 	<xsl:template name="formatDate">
 		    <xsl:param name="date" />
@@ -91,17 +91,17 @@
 		        </xsl:choose>
 		    </xsl:if>
 	</xsl:template>
-	
+
 	<xsl:template match="zorg:i18n">
   		<xsl:if test="lang($OutLang)">
    			<xsl:value-of select="."/>
   		</xsl:if>
  	</xsl:template>
-	
+
 	<!-- Professional Summary -->
 	<xsl:template match="zorg:cv/zorg:professionalSummary">
 		<xsl:for-each select="zorg:company">
-		
+
 		<article class="experience">
 			<div class="article_title">
 				<div class="title">
@@ -117,7 +117,7 @@
 					<span class="job-name"><xsl:value-of select="zorg:title/zorg:i18n" /></span>
 				</div>
 				<div style="float: right;">
-					<span class="from"><xsl:call-template name="formatDate"><xsl:with-param name="format" select="'other'" /><xsl:with-param name="date" select="zorg:dateIn" /></xsl:call-template></span> - 
+					<span class="from"><xsl:call-template name="formatDate"><xsl:with-param name="format" select="'other'" /><xsl:with-param name="date" select="zorg:dateIn" /></xsl:call-template></span> -
 					<span class="to"><xsl:call-template name="formatDate"><xsl:with-param name="date" select="zorg:dateOut" /></xsl:call-template></span>
 				</div>
 			</div>
@@ -130,14 +130,14 @@
 			</div>
 			</xsl:for-each>
 		</article>
-		
+
 		</xsl:for-each>
 	</xsl:template>
-	
+
 	<!-- School Summary -->
 	<xsl:template match="zorg:cv/zorg:schoolSummary">
 		<xsl:for-each select="zorg:school">
-		
+
 		<article class="formation">
 			<div class="article_title">
 				<div class="title">
@@ -153,7 +153,7 @@
 					<span class="job-name"><xsl:value-of select="zorg:title" /></span>
 				</div>
 				<div style="float: right;">
-					<span class="from"><xsl:call-template name="formatDate"><xsl:with-param name="format" select="'other'" /><xsl:with-param name="date" select="zorg:dateIn" /></xsl:call-template></span> - 
+					<span class="from"><xsl:call-template name="formatDate"><xsl:with-param name="format" select="'other'" /><xsl:with-param name="date" select="zorg:dateIn" /></xsl:call-template></span> -
 					<span class="to"><xsl:call-template name="formatDate"><xsl:with-param name="date" select="zorg:dateOut" /></xsl:call-template></span>
 				</div>
 			</div>
@@ -167,7 +167,7 @@
 
 		</xsl:for-each>
 	</xsl:template>
-		
+
 	<!-- Qualifications -->
 	<xsl:template match="zorg:cv/zorg:qualifications">
 		<xsl:for-each select="zorg:qualification">
@@ -188,10 +188,10 @@
 		</article>
 		</xsl:for-each>
 	</xsl:template>
-			
+
 	<!-- ************************************************************************************************* -->
 	<!-- Cv -->
-	
+
 	<xsl:template match="/">
 <html>
 
@@ -202,7 +202,7 @@
 
     <title>Zenithar.org</title>
     <meta name="description" content="Thibault NORMAND (Blog, CV, et le reste)" />
-	
+
 	<meta itemprop="name" content="Zenithar.org" />
 	<meta itemprop="description" content="Thibault NORMAND (Blog, CV, et le reste)" />
 
@@ -225,14 +225,14 @@
 
     <link rel="canonical" href="http://zenithar.org" />
 
-	<script src="js/modernizr-1.7.min.js">//</script>   
+	<script src="js/modernizr-1.7.min.js">//</script>
     <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/css3.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/general.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen" />
-    
+
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-	
+
     <script src="js/jquery.js" type="text/javascript" charset="utf-8">//</script>
 	<script src="js/cvcard.js" type="text/javascript" charset="utf-8">//</script>
 </head>
@@ -256,13 +256,13 @@
 				</div>
 			</div>
 		</nav>
-				
+
 	</header>
-	
+
 	<div class="row">
 		<img src="img/head.png" class="logo" alt="Thibault NORMAND" />
 	</div>
-	
+
 	<div id="content" class="row">
 		<!-- About -->
 		<section id="about">
@@ -273,14 +273,14 @@
 				<ul class="social">
 					<li class="facebook"><a href="http://www.facebook.com/zenithar" rel="me">Facebook</a></li>
 					<li class="twitter"><a href="http://twitter.com/zenithar" rel="me">Twitter</a></li>
-					<li class="googleplus"><a href="https://plus.google.com/+ThibaultNormand/" rel="author">Google+</a></li>
+					<li class="github"><a href="https://github.com/zenithar" rel="author">Github</a></li>
 				</ul>
 			</div>
 			<div class="col_4 col">
 				<ul class="social">
 					<li class="email"><a href="http://www.google.com/recaptcha/mailhide/d?k=01IIc-s5LNYiS-CG_gthn4PA==&amp;c=r5Ctx8RMDz422qmYESfk1g==">Email</a></li>
-					<li class="blog"><a href="http://blog.zenithar.org" rel="me">Blog</a></li>
-					<li class="rss"><a href="http://feeds.feedburner.com/ZenitharOrg" rel="me">Rss</a></li>
+					<li class="blog"><a href="https://blog.zenithar.org" rel="me">Blog</a></li>
+					<li class="linkedin"><a href="https://www.linkedin.com/in/zenithar" rel="me">Linkedin</a></li>
 				</ul>
 			</div>
 		</section>
@@ -290,21 +290,21 @@
         <xsl:apply-templates select="zorg:cv/zorg:professionalSummary" />
 		</section>
         <!-- /Professional -->
-		
-    		
+
+
     	<!-- Formations -->
 		<section id="education">
 		<xsl:apply-templates select="zorg:cv/zorg:schoolSummary" />
 		</section>
         <!-- /Formations -->
-		      				
+
 		<!-- competences / skills -->
 		<section id="skills" class="hidden">
         <xsl:apply-templates select="zorg:cv/zorg:qualifications" />
 		</section>
 		<!-- competences / skills -->
 	</div>
-	
+
 	<footer class="row">
 		<p><a rel="me" href="http://zenithar.org">http://zenithar.org</a></p>
 	</footer>
@@ -313,5 +313,5 @@
 </html>
 
 	</xsl:template>
-	
+
 </xsl:stylesheet>

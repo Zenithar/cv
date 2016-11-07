@@ -68,6 +68,8 @@ nav { margin: 0 auto; background: #454546; clear: both; height: 31px; padding-to
 .social .blog { background: no-repeat url(../img/wordpress_32.png); }
 .social .googleplus { background: no-repeat url(../img/google_plus_32.png); }
 .social .email { background: no-repeat url(../img/email_32.png); }
+.social .github { background: no-repeat url(../img/github_32.png); }
+.social .linkedin { background: no-repeat url(../img/linkedin_32.png); }
 
 .file {}
 .file li a:hover { background: transparent; }
