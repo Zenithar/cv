@@ -21,7 +21,9 @@
                 </fo:block>
               </fo:table-cell>
               <fo:table-cell text-align="right">
-                <fo:block><fo:page-number/> / <fo:page-number-citation ref-id="last-page-marker"/></fo:block>
+                <fo:block><fo:page-number/>
+                                        /
+                                        <fo:page-number-citation ref-id="last-page-marker"/></fo:block>
               </fo:table-cell>
             </fo:table-row>
           </fo:table-body>
@@ -37,7 +39,11 @@
           <fo:table-body>
             <fo:table-row>
               <fo:table-cell text-align="left">
-                <fo:block>Toulouse - France • +33 668 666 396</fo:block>
+                <fo:block>Toulouse
+                            -
+                            France
+                            •
+                            +33 668 666 396</fo:block>
               </fo:table-cell>
               <fo:table-cell text-align="right">
                 <fo:block>
@@ -56,8 +62,25 @@
         <fo:block text-align="justify" font-style="italic" space-before="4pt" space-after="8pt">Développeur de formation et passionné de sécurité, j'aime traiter des projets alliant ces deux compétences.
       Mon expérience en développement, ainsi que ma curiosité pour les technologies me permet d'avoir un regard tourné vers l'avenir.
       J'attache de l'importance au partage des connaissances et compétences au sein de mon environnement de travail. Avide
-      de connaissances, je recherche des postes permettant l'apprentissage et l'exploitation de nouveaux savoirs. Profils de postes souhaités :
-      architecte logiciel, expertise technique, conseil dans le domaine de la sécurité.</fo:block>
+      de connaissances, je recherche des postes permettant l'apprentissage et l'exploitation de nouveaux savoirs.</fo:block>
+      </fo:block-container>
+      <fo:block-container space-before="4pt" id="expectations">
+        <fo:block text-align="justify" font-style="italic" space-before="4pt" space-after="8pt">
+          <fo:block font-size="80%">
+      Profils de postes souhaités :
+      Architecte logiciel;
+      Expertise technique;
+      Conseil;
+      </fo:block>
+          <fo:block font-size="80%">
+      Domaines souhaités : 
+      Sécurité;
+      Big Data;
+      Machine Learning;
+      BlockChain;
+      IoT;
+      </fo:block>
+        </fo:block>
       </fo:block-container>
       <fo:block-container space-before="12pt" id="experiences">
         <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Expérience Professionnelle</fo:block>
@@ -69,11 +92,14 @@
               <fo:table-row font-weight="bold">
                 <fo:table-cell text-align="left">
                   <fo:block>
-                    <fo:basic-link external-destination="url('')" text-decoration="underline">Privé</fo:basic-link>
+                    <fo:basic-link external-destination="url('')" text-decoration="underline">N/C</fo:basic-link>
                   </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Toulouse - France</fo:block>
+                  <fo:block>Toulouse
+                                -
+
+                                France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -81,7 +107,10 @@
                   <fo:block font-style="italic">Architecte Technique / Application Security Engineer / DevSecOps</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Octobre 2013 -  </fo:block>
+                  <fo:block font-style="italic">Octobre 2013
+                                    -
+
+                                     </fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -92,7 +121,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Transformateurs Maltego (Go, Neo4j, ElasticSearch)</fo:block>
+                        <fo:block font-size="80%">Transformateurs locaux Maltego (Go, Neo4j, ElasticSearch)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -100,7 +129,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Plateforme d'analyse de malware automatisée pour extraction d'IoC (Go, RabbitMQ, RethinkDB, Docker, Cuckoo, VirusTotal, FireEye, Yara)</fo:block>
+                        <fo:block font-size="80%">Plateforme d'analyse de malware automatisée pour extraction d'IoC (Go, RethinkDB, RabbitMQ, Docker, Cuckoo, VirusTotal, Yara, AngularJS 2)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -172,7 +201,15 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Conception et réalisation de microservices : email (composition, envoi, signature), identification / autorisation, jetons, licences (Go, gRPC, Consul, Vault, Docker, Swarm)</fo:block>
+                        <fo:block font-size="80%">Conception et réalisation de microservices : email (composition, envoi, signature), identification / autorisation, jetons, licences (Go, gRPC, Consul, Vault, Docker, Rancher)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Tableaux de bords et métrologie logiciel (Go, Prometheus, InfluxDB, ElasticSearch, Grafana)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -201,7 +238,10 @@
                   </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Toulouse - France</fo:block>
+                  <fo:block>Toulouse
+                                -
+
+                                France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -209,7 +249,10 @@
                   <fo:block font-style="italic">Ingénieur R&amp;D / Chef de Projet</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Janvier 2010 - Octobre 2013</fo:block>
+                  <fo:block font-style="italic">Janvier 2010
+                                    -
+
+                                    Octobre 2013</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -289,7 +332,10 @@
                   </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Toulouse - France</fo:block>
+                  <fo:block>Toulouse
+                                -
+
+                                France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -297,7 +343,10 @@
                   <fo:block font-style="italic">Ingénieur Sécurité</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Juillet 2008 - Décembre 2009</fo:block>
+                  <fo:block font-style="italic">Juillet 2008
+                                    -
+
+                                    Décembre 2009</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -359,7 +408,10 @@
                   <fo:block font-style="italic">Stagiaire</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Octobre 2007 - Juin 2008</fo:block>
+                  <fo:block font-style="italic">Octobre 2007
+                                    -
+
+                                    Juin 2008</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -407,7 +459,10 @@
                   </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Toulouse - France</fo:block>
+                  <fo:block>Toulouse
+                                -
+
+                                France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -415,7 +470,10 @@
                   <fo:block font-style="italic">Stagiaire</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Mars 2007 - Septembre 2007</fo:block>
+                  <fo:block font-style="italic">Mars 2007
+                                    -
+
+                                    Septembre 2007</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -463,7 +521,10 @@
                   </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Toulouse - France</fo:block>
+                  <fo:block>Toulouse
+                                -
+
+                                France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -471,7 +532,10 @@
                   <fo:block font-style="italic">Stagiaire</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Mars 2006 - Aout 2006</fo:block>
+                  <fo:block font-style="italic">Mars 2006
+                                    -
+
+                                    Aout 2006</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -527,7 +591,10 @@
                   </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Sophia Antipolis - France</fo:block>
+                  <fo:block>Sophia Antipolis
+                                -
+
+                                France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -535,7 +602,10 @@
                   <fo:block font-style="italic">Stagiaire</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Mars 2005 - Septembre 2005</fo:block>
+                  <fo:block font-style="italic">Mars 2005
+                                    -
+
+                                    Septembre 2005</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -599,7 +669,10 @@
                   </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Nice - France</fo:block>
+                  <fo:block>Nice
+                                -
+
+                                France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -607,7 +680,10 @@
                   <fo:block font-style="italic">Stagiaire</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Mars 2004 - Juillet 2004</fo:block>
+                  <fo:block font-style="italic">Mars 2004
+                                    -
+
+                                    Juillet 2004</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -656,7 +732,10 @@
                   <fo:block>IUP ISI</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Toulouse - France</fo:block>
+                  <fo:block>Toulouse
+                                -
+
+                                France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -664,7 +743,10 @@
                   <fo:block font-style="italic">M2 ISI - Métamodélisation et Temps réel critique</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>2007 - 2008</fo:block>
+                  <fo:block>2007
+                                    -
+
+                                    2008</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row space-before="4pt">
@@ -686,7 +768,10 @@
                   <fo:block font-style="italic">M1 Ingénierie des Systèmes Informatiques (ISI)</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>2006 - 2007</fo:block>
+                  <fo:block>2006
+                                    -
+
+                                    2007</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row space-before="4pt">
@@ -708,7 +793,10 @@
                   <fo:block font-style="italic">L3 Ingénierie des Systèmes Informatiques (ISI)</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>2005 - 2006</fo:block>
+                  <fo:block>2005
+                                    -
+
+                                    2006</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row space-before="4pt">
@@ -738,7 +826,10 @@
                   <fo:block>IUT Informatique</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Nice - France</fo:block>
+                  <fo:block>Nice
+                                -
+
+                                France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -746,7 +837,10 @@
                   <fo:block font-style="italic">Licence Professionelle, Administration des systèmes et des réseaux (ASR)</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>2004 - 2005</fo:block>
+                  <fo:block>2004
+                                    -
+
+                                    2005</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row space-before="4pt">
@@ -768,7 +862,10 @@
                   <fo:block font-style="italic">DUT Informatique, Génie Logiciel</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>2002 - 2004</fo:block>
+                  <fo:block>2002
+                                    -
+
+                                    2004</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row space-before="4pt">
@@ -798,7 +895,10 @@
                   <fo:block>Lycée A. Camus</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Fréjus - France</fo:block>
+                  <fo:block>Fréjus
+                                -
+
+                                France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -806,7 +906,10 @@
                   <fo:block font-style="italic">Bac S Sience de l'ingénieur, Spécialité Mathématiques</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block> - 2002</fo:block>
+                  <fo:block>
+                                    -
+
+                                    2002</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row space-before="4pt">
@@ -876,127 +979,127 @@
       <fo:block-container space-before="12pt" id="skills">
         <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Compétences</fo:block>
         <fo:block space-before="4pt" space-after="8pt">
+          <fo:block space-before="4pt" font-weight="bold">Fonctionnelles</fo:block>
+          <fo:block font-size="80%">Gestion de projet / Scrum Master;
+            Conduite de réunion;
+            Pédagogie / Vulgarisation;
+            Rédaction publications scientifiques;
+            Présentation en public;
+            Veille technologique;
+            </fo:block>
           <fo:block space-before="4pt" font-weight="bold">Langages</fo:block>
           <fo:block font-size="80%">Go;
-					JavaScript / ES6;
-					Java;
-					Ruby;
-					Python;
-					Scala;
-					C/C++;
-					PHP;
-					XML / XSLT;
-					XML Schema / Relax NG;
-					XSL-FO;
-					Qt / KDE;
-					C# (.Net);
-					ASM (x86, ARM7);
-					</fo:block>
-          <fo:block space-before="4pt" font-weight="bold">Java</fo:block>
-          <fo:block font-size="80%">J2EE;
-					Spring (Core, MVC, Security, Data);
-					Ant / Maven / SBT / Gradle;
-					JPA / Hibernate;
-					JUnit / TestNG;
-					JBoss AS / Tomcat;
-					Apache Storm;
-					Apache Spark;
-					Apache Kafka;
-					Zookeeper;
-					</fo:block>
+            JavaScript / ES6;
+            Java;
+            Ruby;
+            Python;
+            Scala;
+            C/C++;
+            PHP;
+            XML / XSLT;
+            XML Schema / Relax NG;
+            XSL-FO;
+            Qt / KDE;
+            C# (.Net);
+            ASM (x86, ARM7);
+            </fo:block>
           <fo:block space-before="4pt" font-weight="bold">Base de données</fo:block>
           <fo:block font-size="80%">MySQL / MariaDB;
-					PostgreSQL;
-					MongoDB;
-					RethinkDB;
-					CouchDB;
-					CouchBase;
-					Redis;
-					ElasticSearch;
-					Neo4j;
-					Hadoop / HBase;
-					Oracle;
-					SQL Server;
-					</fo:block>
+            PostgreSQL;
+            MongoDB;
+            RethinkDB;
+            CouchDB;
+            CouchBase;
+            Redis;
+            Neo4j;
+            Hadoop / HBase;
+            Oracle;
+            SQL Server;
+            </fo:block>
           <fo:block space-before="4pt" font-weight="bold">Système d'exploitation</fo:block>
           <fo:block font-size="80%">Linux (OS courant : ArchLinux);
-					MacOS X;
-					Windows;
-					</fo:block>
+            MacOS X;
+            Windows;
+            </fo:block>
           <fo:block space-before="4pt" font-weight="bold">Environnements de développement</fo:block>
           <fo:block font-size="80%">Git / Mercurial;
-					SVN / CVS;
-					CMake;
-					VisualStudio;
-					</fo:block>
+            SVN / CVS;
+            CMake;
+            VisualStudio;
+            </fo:block>
           <fo:block space-before="4pt" font-weight="bold">DevOps</fo:block>
           <fo:block font-size="80%">LXC / Docker;
-					Chef / Puppet / Ansible / SaltStack;
-					Logstash / Fluentd / Graylog;
-					Sentry;
-					Consul / Etcd;
-					Jenkins / TravisCI / DroneIO / GitlabCI;
-					Kubernetes / Deis;
-					CoreOS / RancherOS;
-					Prometheus / Gafana;
-					</fo:block>
-          <fo:block space-before="4pt" font-weight="bold">Web</fo:block>
-          <fo:block font-size="80%">Node.js;
-					Express;
-					MeteorJS;
-					Ruby on Rails;
-					Django;
-					Microformats;
-					Play! Framework;
-					</fo:block>
+            Chef / Puppet / Ansible / SaltStack;
+            Logstash / Fluentd / Graylog;
+            ElasticSearch / Kibana;
+            Sentry;
+            Consul / Etcd;
+            Vault;
+            Jenkins / TravisCI / DroneIO / GitlabCI;
+            Kubernetes / Deis;
+            CoreOS / Rancher;
+            Prometheus / Gafana;
+            </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Web Framework</fo:block>
+          <fo:block font-size="80%">Node.js / Express;
+            MeteorJS;
+            Ruby on Rails;
+            Django;
+            Play! Framework;
+            Microformats;
+            </fo:block>
           <fo:block space-before="4pt" font-weight="bold">Frontend / UX</fo:block>
-          <fo:block font-size="80%">AngularJS 1 / 2;
-					ECMAScript 6 / 7;
-					TypeScript;
-					CoffeeScript;
-					Backbone.JS;
-					React;
-					Yeoman;
-					Grunt;
-					Gulp;
-					Bower;
-					WebPack;
-					jQuery;
-					HTML5;
-					CSS3;
-					SASS;
-					LESS;
-					Twitter Bootstrap;
-					Google Material Design;
-					</fo:block>
+          <fo:block font-size="80%">ES6 / ES7 / TypeScript;
+            AngularJS 1 / 2;
+            React / Flux;
+            RxJS;
+            CoffeeScript;
+            Backbone.JS;
+            Grunt / Gulp / WebPack;
+            HTML5;
+            CSS3 / SASS / LESS;
+            Twitter Bootstrap;
+            Google Material Design;
+            </fo:block>
           <fo:block space-before="4pt" font-weight="bold">Data Scientism</fo:block>
           <fo:block font-size="80%">D3;
-					Machine Learning (SVM, PNN, RF, GBM);
-					H2o;
-					R;
-					Protégé;
-					OWL;
-					JSON-LD;
-					</fo:block>
+            Machine Learning (SVM, PNN, RF, GBM);
+            H2o;
+            R;
+            Protégé;
+            OWL;
+            JSON-LD;
+            </fo:block>
           <fo:block space-before="4pt" font-weight="bold">Sécurité</fo:block>
-          <fo:block font-size="80%">EBIOS;
-					MEHARI;
-					IDA Pro;
-					OllyDbg;
-					MetaSploit;
-					Cuckoo Sandbox;
-					</fo:block>
-          <fo:block space-before="4pt" font-weight="bold">Fonctionnelles</fo:block>
-          <fo:block font-size="80%">Gestion de projet;
-					Scrum Master;
-					Conduite de réunion;
-					Pédagogie / Vulgarisation;
-					Présentation en public;
-					</fo:block>
+          <fo:block font-size="80%">Cuckoo Sandbox / VMCloak;
+            Suricata / Bro / OSSEC-HIDS;
+            Honeypots (Cowerie / Kippo);
+            DNS / SMTP Sinkhole;
+            </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Blockchain</fo:block>
+          <fo:block font-size="80%">Ethereum;
+            </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Embarqué</fo:block>
+          <fo:block font-size="80%">Raspberry PI 2 / 3;
+            Raspberry PI 1 / Zero;
+            Electronique pratique basique;
+            </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Java</fo:block>
+          <fo:block font-size="80%">J2EE;
+            Spring (Core, MVC, Security, Data);
+            Ant / Maven / SBT / Gradle;
+            JPA / Hibernate;
+            JUnit / TestNG;
+            JBoss AS / Tomcat;
+            Apache Storm;
+            Apache Spark;
+            Apache Kafka;
+            Zookeeper;
+            </fo:block>
         </fo:block>
       </fo:block-container>
-      <fo:block-container space-before="12pt" id="references" keep-together="always">
-        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Références</fo:block>
+      <fo:block-container space-before="12pt" id="social" keep-together="always">
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Liens</fo:block>
         <fo:block space-before="4pt" space-after="8pt" font-size="80%">
           <fo:list-block margin-left="12pt">
             <fo:list-item>
@@ -1004,7 +1107,9 @@
                 <fo:block>›</fo:block>
               </fo:list-item-label>
               <fo:list-item-body start-indent="body-start()">
-                <fo:block>ENG, Philippe - <fo:inline font-style="italic">[Dimension Data]</fo:inline></fo:block>
+                <fo:block>
+                  <fo:basic-link external-destination="url('https://blog.zenithar.org')">Blog</fo:basic-link>
+                </fo:block>
               </fo:list-item-body>
             </fo:list-item>
             <fo:list-item>
@@ -1012,7 +1117,9 @@
                 <fo:block>›</fo:block>
               </fo:list-item-label>
               <fo:list-item-body start-indent="body-start()">
-                <fo:block>BOUDET, Florent - <fo:inline font-style="italic">[Airbus]</fo:inline></fo:block>
+                <fo:block>
+                  <fo:basic-link external-destination="url('http://www.linkedin.com/in/zenithar')">LinkedIn</fo:basic-link>
+                </fo:block>
               </fo:list-item-body>
             </fo:list-item>
             <fo:list-item>
@@ -1020,7 +1127,9 @@
                 <fo:block>›</fo:block>
               </fo:list-item-label>
               <fo:list-item-body start-indent="body-start()">
-                <fo:block>MICHELS, Jean Claude - <fo:inline font-style="italic">[Airbus]</fo:inline></fo:block>
+                <fo:block>
+                  <fo:basic-link external-destination="url('https://github.com/zenithar')">Github</fo:basic-link>
+                </fo:block>
               </fo:list-item-body>
             </fo:list-item>
             <fo:list-item>
@@ -1028,31 +1137,9 @@
                 <fo:block>›</fo:block>
               </fo:list-item-label>
               <fo:list-item-body start-indent="body-start()">
-                <fo:block>BLAISET, Thibault - <fo:inline font-style="italic">[i-BP]</fo:inline></fo:block>
-              </fo:list-item-body>
-            </fo:list-item>
-            <fo:list-item>
-              <fo:list-item-label end-indent="label-end()">
-                <fo:block>›</fo:block>
-              </fo:list-item-label>
-              <fo:list-item-body start-indent="body-start()">
-                <fo:block>FEVRIER, Benoit - <fo:inline font-style="italic">[OpenCube Technologies]</fo:inline></fo:block>
-              </fo:list-item-body>
-            </fo:list-item>
-            <fo:list-item>
-              <fo:list-item-label end-indent="label-end()">
-                <fo:block>›</fo:block>
-              </fo:list-item-label>
-              <fo:list-item-body start-indent="body-start()">
-                <fo:block>LAPEYRE, Yann - <fo:inline font-style="italic">[MEDES / IMPS]</fo:inline></fo:block>
-              </fo:list-item-body>
-            </fo:list-item>
-            <fo:list-item>
-              <fo:list-item-label end-indent="label-end()">
-                <fo:block>›</fo:block>
-              </fo:list-item-label>
-              <fo:list-item-body start-indent="body-start()">
-                <fo:block>DEDIEU, Gilles - <fo:inline font-style="italic">[INFOTEL]</fo:inline></fo:block>
+                <fo:block>
+                  <fo:basic-link external-destination="url('http://twitter.com/zenithar')">Twitter</fo:basic-link>
+                </fo:block>
               </fo:list-item-body>
             </fo:list-item>
           </fo:list-block>
