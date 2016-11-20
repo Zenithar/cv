@@ -11,14 +11,18 @@
       <fo:block font-size="6pt" text-align="center" space-after.conditionality="retain" space-after="0.25in">
         <fo:block space-before="0.67em" border="1px solid" space-before.minimum="0.5em" space-before.optimum="0.67em" space-before.maximum="0.92em" space-after.minimum="0.5em" space-after.optimum="0.67em" space-after.maximum="0.92em"/>
         <fo:table>
-          <fo:table-column column-width="50%"/>
-          <fo:table-column column-width="50%"/>
+          <fo:table-column column-width="33%"/>
+          <fo:table-column column-width="34%"/>
+          <fo:table-column column-width="33%"/>
           <fo:table-body>
             <fo:table-row>
               <fo:table-cell text-align="left">
                 <fo:block>
                   <fo:basic-link external-destination="url('http://zenithar.org/')">http://zenithar.org/</fo:basic-link>
                 </fo:block>
+              </fo:table-cell>
+              <fo:table-cell text-align="center">
+                <fo:block>Last generated on 2016-11-20<fo:basic-link external-destination="url('https://github.com/Zenithar/cv/commit/1fcac87')"> (1fcac87)</fo:basic-link></fo:block>
               </fo:table-cell>
               <fo:table-cell text-align="right">
                 <fo:block><fo:page-number/>
@@ -31,50 +35,58 @@
       </fo:block>
     </fo:static-content>
     <fo:flow flow-name="xsl-region-body" font-size="80%">
-      <fo:block-container>
-        <fo:block border-after-style="double" border-after-width="medium" font-size="200%" letter-spacing=".15em" font-variant="small-caps">Thibault Normand</fo:block>
-        <fo:table space-before="4pt">
-          <fo:table-column column-width="50%"/>
-          <fo:table-column column-width="50%"/>
-          <fo:table-body>
-            <fo:table-row>
-              <fo:table-cell text-align="left">
-                <fo:block>Toulouse
-                            -
-                            France
-                            •
-                            +33 668 666 396</fo:block>
-              </fo:table-cell>
-              <fo:table-cell text-align="right">
-                <fo:block>
-                  <fo:basic-link color="blue" text-decoration="underline" external-destination="url('mailto:thibault.normand@gmail.com')">thibault.normand@gmail.com</fo:basic-link>
-                </fo:block>
-              </fo:table-cell>
-            </fo:table-row>
-          </fo:table-body>
-        </fo:table>
-      </fo:block-container>
-      <fo:block-container space-before="12pt" id="title">
-        <fo:block text-align="center" font-weight="bold" space-before="4pt" space-after="0pt" font-size="150%">Architecte Technique / Application Security Engineer / DevSecOps</fo:block>
-      </fo:block-container>
+      <fo:table>
+        <fo:table-column column-width="80%"/>
+        <fo:table-column column-width="20%"/>
+        <fo:table-body>
+          <fo:table-row>
+            <fo:table-cell>
+              <fo:block-container>
+                <fo:block border-after-style="double" border-after-width="medium" font-size="200%" letter-spacing=".15em" font-variant="small-caps">Thibault Normand</fo:block>
+                <fo:table space-before="4pt">
+                  <fo:table-column column-width="80%"/>
+                  <fo:table-column column-width="20%"/>
+                  <fo:table-body>
+                    <fo:table-row>
+                      <fo:table-cell text-align="left">
+                        <fo:block>33 yo,
+                            French, Married • Toulouse - France • +33 668 666 396</fo:block>
+                      </fo:table-cell>
+                      <fo:table-cell text-align="right">
+                        <fo:block>
+                          <fo:basic-link color="blue" text-decoration="underline" external-destination="url('mailto:thibault.normand@gmail.com')">thibault.normand@gmail.com</fo:basic-link>
+                        </fo:block>
+                      </fo:table-cell>
+                    </fo:table-row>
+                  </fo:table-body>
+                </fo:table>
+              </fo:block-container>
+              <fo:block-container space-before="20pt" id="title">
+                <fo:block text-align="center" font-weight="bold" space-before="4pt" space-after="0pt" font-size="150%">Application Security Engineer / Full Stack Developer / DevSecOps</fo:block>
+              </fo:block-container>
+            </fo:table-cell>
+            <fo:table-cell>
+              <fo:block text-align="right">
+                <fo:external-graphic content-height="35mm" scaling="uniform" src="../src/id.jpg"/>
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+        </fo:table-body>
+      </fo:table>
       <fo:block-container space-before="4pt" id="resume">
-        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Résumé</fo:block>
-        <fo:block text-align="justify" font-style="italic" space-before="4pt" space-after="8pt">Développeur de formation et passionné de sécurité, j'aime traiter des projets alliant ces deux compétences.
-      Mon expérience en développement, ainsi que ma curiosité pour les technologies me permet d'avoir un regard tourné vers l'avenir.
-      J'attache de l'importance au partage des connaissances et compétences au sein de mon environnement de travail. Avide
-      de connaissances, je recherche des postes permettant l'apprentissage et l'exploitation de nouveaux savoirs.</fo:block>
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Presentation</fo:block>
+        <fo:block text-align="justify" font-style="italic" space-before="4pt" space-after="8pt">Passionated technical architect and security engineer, I like to treat projects combining these two skills.
+      My experience in security and develoment allows me to have a different approach, especially be aware of security issues, in development lifecycle.
+      I'm in permanent technologic exploration, always looking for the "best tool", and better skills to exploit.</fo:block>
       </fo:block-container>
       <fo:block-container space-before="4pt" id="expectations">
         <fo:block text-align="justify" font-style="italic" space-before="4pt" space-after="8pt">
-          <fo:block font-size="80%">
-      Profils de postes souhaités :
-      Architecte logiciel;
-      Expertise technique;
-      Conseil;
+          <fo:block font-size="80%">Jobs expected : Technical Architect;
+      Full Stack Developer;
+      Technical Expertise;
+      Consulting;
       </fo:block>
-          <fo:block font-size="80%">
-      Domaines souhaités : 
-      Sécurité;
+          <fo:block font-size="80%">Domains expected : Security;
       Big Data;
       Machine Learning;
       BlockChain;
@@ -83,7 +95,7 @@
         </fo:block>
       </fo:block-container>
       <fo:block-container space-before="12pt" id="experiences">
-        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Expérience Professionnelle</fo:block>
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Professional Experience</fo:block>
         <fo:block space-before="4pt" space-after="8pt">
           <fo:table keep-together.within-column="always">
             <fo:table-column column-number="1" column-width="66%"/>
@@ -91,23 +103,20 @@
             <fo:table-body>
               <fo:table-row font-weight="bold">
                 <fo:table-cell text-align="left">
-                  <fo:block>
-                    <fo:basic-link external-destination="url('')" text-decoration="underline">N/C</fo:basic-link>
-                  </fo:block>
+                  <fo:block><fo:basic-link external-destination="url('')" text-decoration="underline">N/C</fo:basic-link>
+                                [Security Research and Development]
+                            </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Toulouse
-                                -
-
-                                France</fo:block>
+                  <fo:block>Toulouse - France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
                 <fo:table-cell text-align="left">
-                  <fo:block font-style="italic">Architecte Technique / Application Security Engineer / DevSecOps</fo:block>
+                  <fo:block font-style="italic">Application Security Engineer / Full Stack Developer / DevSecOps</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Octobre 2013
+                  <fo:block font-style="italic">October 2013
                                     -
 
                                      </fo:block>
@@ -121,7 +130,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Transformateurs locaux Maltego (Go, Neo4j, ElasticSearch)</fo:block>
+                        <fo:block font-size="80%">Malware alert event protocol for malware detection, and/or IOC reports. (Go, ElasticSearch, RabbitMQ, Protobuf, Snappy, WebHook)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -129,7 +138,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Plateforme d'analyse de malware automatisée pour extraction d'IoC (Go, RethinkDB, RabbitMQ, Docker, Cuckoo, VirusTotal, Yara, AngularJS 2)</fo:block>
+                        <fo:block font-size="80%">Maltego transformation services. (Go, Neo4j, ElasticSearch)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -137,7 +146,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Etude des régroupements de données IoC / observables "Cyber Threat Analyse" (R, Neo4j, ElasticSearch, Machine learning, Clustering)</fo:block>
+                        <fo:block font-size="80%">Design and develop a malware analysis workflow for IoC extraction. (Go, RethinkDB, RabbitMQ, Docker, Cuckoo, VirusTotal, Yara, AngularJS 2)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -145,7 +154,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Protocole d'échange de malwares pour communication honeypot, sandbox, antivirus. (Protobuf, Compression, Crypto)</fo:block>
+                        <fo:block font-size="80%">"Cyber Threat Analytics" for data graph clustering research. (R, Neo4j, ElasticSearch, Machine learning, Clustering)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -153,7 +162,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Plateforme de centralisation d'indicateurs pour analyse sécurité "Technical Threat Intelligence" (Go, RabbitMQ, ElasticSearch, Neo4j, AngularJS)</fo:block>
+                        <fo:block font-size="80%">Malware exchange protocol for HoneyPots, Sandboxes, and Antivirus. (Protobuf, Compression, Crypto)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -161,7 +170,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Plateforme de soumission et de séquestre de malwares (Go, RabbitMQ, MongoDB)</fo:block>
+                        <fo:block font-size="80%">"Technical Threat Intelligence" platform for IoC feeds aggregation. (Go, RabbitMQ, ElasticSearch, Neo4j, AngularJS)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -169,7 +178,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Plateforme de centralisation et corrélation des bulletins sécurité (Go, RabbitMQ, MongoDB, AngularJS)</fo:block>
+                        <fo:block font-size="80%">Malware submission portal service. (Go, RabbitMQ, MongoDB)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -177,7 +186,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Plateforme d'analyse de données discrètes pour classification automatisée (Go, RabbitMQ, MongoDB, SciKit-Learn, Machine learning)</fo:block>
+                        <fo:block font-size="80%">Security advisories portal service. (Go, RabbitMQ, MongoDB, AngularJS)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -185,7 +194,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Conception et réalisation d'un système embarqué type "boîte blanche" pour décontamination virale (Go, AngularJS, ZMQ, Docker)</fo:block>
+                        <fo:block font-size="80%">Discrete data analysis platform for automated behaviour classification. (Go, RabbitMQ, MongoDB, SciKit-Learn, Machine learning)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -193,7 +202,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Plateforme d'harmonisation et d'échanges pour SIEM (Go, MongoDB, AngularJS)</fo:block>
+                        <fo:block font-size="80%">Malware decontamination autonomous service. (Go, AngularJS, Qt, ZMQ, Docker)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -201,7 +210,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Conception et réalisation de microservices : email (composition, envoi, signature), identification / autorisation, jetons, licences (Go, gRPC, Consul, Vault, Docker, Rancher)</fo:block>
+                        <fo:block font-size="80%">Risk coverage oriented SIEM rules exchange platform. (Go, MongoDB, AngularJS)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -209,7 +218,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Tableaux de bords et métrologie logiciel (Go, Prometheus, InfluxDB, ElasticSearch, Grafana)</fo:block>
+                        <fo:block font-size="80%">Microservice platform : email(compose, send, sign), autorization / authentification, token generation, licensing (Go, gRPC, Consul, Vault, Docker, Rancher)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -217,53 +226,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Audit qualité et sécurité (Java / J2EE)</fo:block>
-                      </fo:list-item-body>
-                    </fo:list-item>
-                  </fo:list-block>
-                </fo:table-cell>
-              </fo:table-row>
-            </fo:table-body>
-          </fo:table>
-        </fo:block>
-        <fo:block space-before="4pt" space-after="8pt">
-          <fo:table keep-together.within-column="always">
-            <fo:table-column column-number="1" column-width="66%"/>
-            <fo:table-column column-number="2" column-width="34%"/>
-            <fo:table-body>
-              <fo:table-row font-weight="bold">
-                <fo:table-cell text-align="left">
-                  <fo:block>
-                    <fo:basic-link external-destination="url('http://www.infotel.com')" text-decoration="underline">INFOTEL</fo:basic-link>
-                  </fo:block>
-                </fo:table-cell>
-                <fo:table-cell text-align="right">
-                  <fo:block>Toulouse
-                                -
-
-                                France</fo:block>
-                </fo:table-cell>
-              </fo:table-row>
-              <fo:table-row>
-                <fo:table-cell text-align="left">
-                  <fo:block font-style="italic">Ingénieur R&amp;D / Chef de Projet</fo:block>
-                </fo:table-cell>
-                <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Janvier 2010
-                                    -
-
-                                    Octobre 2013</fo:block>
-                </fo:table-cell>
-              </fo:table-row>
-              <fo:table-row>
-                <fo:table-cell number-columns-spanned="2">
-                  <fo:list-block margin-left="12pt">
-                    <fo:list-item>
-                      <fo:list-item-label end-indent="label-end()">
-                        <fo:block>›</fo:block>
-                      </fo:list-item-label>
-                      <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Conception et réalisation d'une plateforme web distribuée haute disponibilité (RabbitMQ, Protobuf, Scala / AKKA, Java, Spring, REST, ElasticSearch, AngularJS)</fo:block>
+                        <fo:block font-size="80%">Dashboards and software metrics monitoring (Go, Prometheus, InfluxDB, ElasticSearch, Grafana)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -271,7 +234,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Conception et réalisation d'un SSO basé sur OAUTH 2.0 (Java, Spring, JWT, PKI, PKCS#11, HOTP)</fo:block>
+                        <fo:block font-size="80%">Security Code Review (Java / J2EE)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -279,39 +242,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Développements d'applications Javascript (jQuery, Backbone.JS, CoffeeScript).</fo:block>
-                      </fo:list-item-body>
-                    </fo:list-item>
-                    <fo:list-item>
-                      <fo:list-item-label end-indent="label-end()">
-                        <fo:block>›</fo:block>
-                      </fo:list-item-label>
-                      <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Industrialisation de l'intégration continue (Git, Jenkins, Sonar)</fo:block>
-                      </fo:list-item-body>
-                    </fo:list-item>
-                    <fo:list-item>
-                      <fo:list-item-label end-indent="label-end()">
-                        <fo:block>›</fo:block>
-                      </fo:list-item-label>
-                      <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Industrialisation de la chaîne documentaire (Git, Jenkins, Maven, Docbook5, XSLT, FOP)</fo:block>
-                      </fo:list-item-body>
-                    </fo:list-item>
-                    <fo:list-item>
-                      <fo:list-item-label end-indent="label-end()">
-                        <fo:block>›</fo:block>
-                      </fo:list-item-label>
-                      <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Interfaces de gestion de processus DB2 / Z/OS (Java, Portlets)</fo:block>
-                      </fo:list-item-body>
-                    </fo:list-item>
-                    <fo:list-item>
-                      <fo:list-item-label end-indent="label-end()">
-                        <fo:block>›</fo:block>
-                      </fo:list-item-label>
-                      <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Maintenance de produits (ClearCase, Java, Struts2, Eclipse RCP)</fo:block>
+                        <fo:block font-size="80%">Intern mentoring.</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                   </fo:list-block>
@@ -327,26 +258,23 @@
             <fo:table-body>
               <fo:table-row font-weight="bold">
                 <fo:table-cell text-align="left">
-                  <fo:block>
-                    <fo:basic-link external-destination="url('http://www.scassi.com')" text-decoration="underline">SCASSI Conseil</fo:basic-link>
-                  </fo:block>
+                  <fo:block><fo:basic-link external-destination="url('http://www.infotel.com')" text-decoration="underline">INFOTEL</fo:basic-link>
+                                [Software Research and Development]
+                            </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Toulouse
-                                -
-
-                                France</fo:block>
+                  <fo:block>Toulouse - France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
                 <fo:table-cell text-align="left">
-                  <fo:block font-style="italic">Ingénieur Sécurité</fo:block>
+                  <fo:block font-style="italic">Lead Developer / ScrumMaster</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Juillet 2008
+                  <fo:block font-style="italic">January 2010
                                     -
 
-                                    Décembre 2009</fo:block>
+                                    October 2013</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -357,7 +285,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Conception et réalisation d'un outil d'analyse de risques basé sur la méthodologie EBIOS (SOA, J2EE, .Net)</fo:block>
+                        <fo:block font-size="80%">High available, legally valuable and secure file deposit platform (RabbitMQ, Protobuf, Scala/AKKA, Java, Spring, ElasticSearch, AngularJS)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -365,7 +293,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Généralisation des méthodes d'analyse de risques (UML)</fo:block>
+                        <fo:block font-size="80%">OAUTH 2.0 based SSO services. (Java, Spring, JWT, PKI, PKCS#11, HOTP)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -373,7 +301,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Audit de code (Java/J2EE, C/C++, PHP)</fo:block>
+                        <fo:block font-size="80%">Javascript application development. (jQuery, Backbone.JS, CoffeeScript)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -381,7 +309,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Reverse engineering, analyse de malware</fo:block>
+                        <fo:block font-size="80%">Continuous integration. (Git, Jenkins, Sonar)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -389,7 +317,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">SOC (Security Operating Center) auprès d'un grand compte (Gestion des événements sécurité, gestion des requêtes sécurité, maintient en condition opérationnelle)</fo:block>
+                        <fo:block font-size="80%">Doc as code worflow. (Git, Jenkins, Maven, Docbook5, XSLT, FOP)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -397,32 +325,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Instructeur pour des ateliers techniques (Virtualisation / Firewall &amp; Contrôles d'accès) auprès d'une vingtaine de personnes</fo:block>
-                      </fo:list-item-body>
-                    </fo:list-item>
-                  </fo:list-block>
-                </fo:table-cell>
-              </fo:table-row>
-              <fo:table-row>
-                <fo:table-cell text-align="left">
-                  <fo:block font-style="italic">Stagiaire</fo:block>
-                </fo:table-cell>
-                <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Octobre 2007
-                                    -
-
-                                    Juin 2008</fo:block>
-                </fo:table-cell>
-              </fo:table-row>
-              <fo:table-row>
-                <fo:table-cell number-columns-spanned="2">
-                  <fo:list-block margin-left="12pt">
-                    <fo:list-item>
-                      <fo:list-item-label end-indent="label-end()">
-                        <fo:block>›</fo:block>
-                      </fo:list-item-label>
-                      <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Conception et réalisation d'un outil d'analyse de risques basé sur la méthodologie EBIOS (Ruby on Rails)</fo:block>
+                        <fo:block font-size="80%">Process management Web interfaces for DB2 / Z/OS. (Java, Portlets)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -430,7 +333,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Administration système et réseau dans un environnement hétérogène</fo:block>
+                        <fo:block font-size="80%">Quality and Security Code Review (Java, J2EE)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -438,7 +341,15 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Penetration Testing sur applications Web</fo:block>
+                        <fo:block font-size="80%">Product maintenance. (ClearCase, Java, Struts2, Eclipse RCP)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Intern mentoring.</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                   </fo:list-block>
@@ -454,26 +365,23 @@
             <fo:table-body>
               <fo:table-row font-weight="bold">
                 <fo:table-cell text-align="left">
-                  <fo:block>
-                    <fo:basic-link external-destination="url('http://www.opencubetech.com/')" text-decoration="underline">Opencube Technologies</fo:basic-link>
-                  </fo:block>
+                  <fo:block><fo:basic-link external-destination="url('http://www.scassi.com')" text-decoration="underline">SCASSI Conseil</fo:basic-link>
+                                [IT Security]
+                            </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Toulouse
-                                -
-
-                                France</fo:block>
+                  <fo:block>Toulouse - France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
                 <fo:table-cell text-align="left">
-                  <fo:block font-style="italic">Stagiaire</fo:block>
+                  <fo:block font-style="italic">Application Security Engineer</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Mars 2007
+                  <fo:block font-style="italic">July 2008
                                     -
 
-                                    Septembre 2007</fo:block>
+                                    December 2009</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -484,7 +392,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Réalisation d'une API d'exploitation de format d'échange de sous-titre DFXP</fo:block>
+                        <fo:block font-size="80%">EBIOS risk analysis based software design. (SOA, J2EE, .Net)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -492,7 +400,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Traitement du signal pour récupération de signaux télétexte</fo:block>
+                        <fo:block font-size="80%">Risk analysis method generalization (UML)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -500,7 +408,72 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Conception UML2, programmation multiplateforme C++ / Qt</fo:block>
+                        <fo:block font-size="80%">Security code review (Java/J2EE, C/C++, PHP)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Reverse engineering, malware analysis</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">SOC Analyst for a local account.</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Teacher for technical courses. (Virtualisation / Firewall and Access Controls)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Intern - Developer</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block font-style="italic">October 2007
+                                    -
+
+                                    June 2008</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Design et develop an EBIOS related risk analysis tool. (Ruby, RoR)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Network and System administrator for small enterprise environment.</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Web Application PenTest (from a developer side view).</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                   </fo:list-block>
@@ -516,26 +489,23 @@
             <fo:table-body>
               <fo:table-row font-weight="bold">
                 <fo:table-cell text-align="left">
-                  <fo:block>
-                    <fo:basic-link external-destination="url('http://www.medes.fr/')" text-decoration="underline">MEDES / IMPS</fo:basic-link>
-                  </fo:block>
+                  <fo:block><fo:basic-link external-destination="url('http://www.opencubetech.com/')" text-decoration="underline">Opencube Technologies</fo:basic-link>
+                                [Numerical Media]
+                            </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Toulouse
-                                -
-
-                                France</fo:block>
+                  <fo:block>Toulouse - France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
                 <fo:table-cell text-align="left">
-                  <fo:block font-style="italic">Stagiaire</fo:block>
+                  <fo:block font-style="italic">Intern - Developer</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Mars 2006
+                  <fo:block font-style="italic">March 2007
                                     -
 
-                                    Aout 2006</fo:block>
+                                    September 2007</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -546,7 +516,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Conception et réalisation d'un composant graphique Java / Eclipse / RCP</fo:block>
+                        <fo:block font-size="80%">DFXP subtitle format decoding and visualisation API. (Qt, C++)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -554,23 +524,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Etat de l'art des systèmes SIG libre (PostGIS, GRASS)</fo:block>
-                      </fo:list-item-body>
-                    </fo:list-item>
-                    <fo:list-item>
-                      <fo:list-item-label end-indent="label-end()">
-                        <fo:block>›</fo:block>
-                      </fo:list-item-label>
-                      <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Architecture réseau, mise en place d'un domaine libre (OpenLDAP, Samba, Kerberos)</fo:block>
-                      </fo:list-item-body>
-                    </fo:list-item>
-                    <fo:list-item>
-                      <fo:list-item-label end-indent="label-end()">
-                        <fo:block>›</fo:block>
-                      </fo:list-item-label>
-                      <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Virtualisation Serveurs (Xen, VMWare)</fo:block>
+                        <fo:block font-size="80%">Digital Signal Processing for TeleText data extraction. (Linux, C++)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                   </fo:list-block>
@@ -586,26 +540,23 @@
             <fo:table-body>
               <fo:table-row font-weight="bold">
                 <fo:table-cell text-align="left">
-                  <fo:block>
-                    <fo:basic-link external-destination="url('http://www.karobas.fr/')" text-decoration="underline">Karobas</fo:basic-link>
-                  </fo:block>
+                  <fo:block><fo:basic-link external-destination="url('http://www.medes.fr/')" text-decoration="underline">MEDES / IMPS</fo:basic-link>
+                                [Health / Space]
+                            </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Sophia Antipolis
-                                -
-
-                                France</fo:block>
+                  <fo:block>Toulouse - France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
                 <fo:table-cell text-align="left">
-                  <fo:block font-style="italic">Stagiaire</fo:block>
+                  <fo:block font-style="italic">Intern - Développeur</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Mars 2005
+                  <fo:block font-style="italic">March 2006
                                     -
 
-                                    Septembre 2005</fo:block>
+                                    August 2006</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -616,7 +567,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Conception / Restructuration du réseau de l'entreprise</fo:block>
+                        <fo:block font-size="80%">Geographical Information System (GIS) visualisation component. (Java, Eclipse, RCP)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -624,7 +575,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Service Haute-Disponibilité, Sécurité</fo:block>
+                        <fo:block font-size="80%">OpenSource GIS server enumeration report. (PostGIS, GRASS)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -632,7 +583,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Mise en service Exchange 2003</fo:block>
+                        <fo:block font-size="80%">Network architecture, setted up a 'free' domain controller. (OpenLDAP, Samba, Kerberos, DHCP, DNS, NTP) </fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -640,15 +591,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Migration du système SGDB (SQLServer - MySQL), migration applicative associée</fo:block>
-                      </fo:list-item-body>
-                    </fo:list-item>
-                    <fo:list-item>
-                      <fo:list-item-label end-indent="label-end()">
-                        <fo:block>›</fo:block>
-                      </fo:list-item-label>
-                      <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Modélisation mondes ludo-educatifs (Virtools)</fo:block>
+                        <fo:block font-size="80%">Virtualisation servers (Gentoo, Xen, VMWare)</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                   </fo:list-block>
@@ -664,26 +607,23 @@
             <fo:table-body>
               <fo:table-row font-weight="bold">
                 <fo:table-cell text-align="left">
-                  <fo:block>
-                    <fo:basic-link external-destination="url('http://www.nice-antiques.com/')" text-decoration="underline">Nice-Antiques.com</fo:basic-link>
-                  </fo:block>
+                  <fo:block><fo:basic-link external-destination="url('http://www.karobas.fr/')" text-decoration="underline">Karobas</fo:basic-link>
+                                [Video Games]
+                            </fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block>Nice
-                                -
-
-                                France</fo:block>
+                  <fo:block>Sophia Antipolis - France</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
                 <fo:table-cell text-align="left">
-                  <fo:block font-style="italic">Stagiaire</fo:block>
+                  <fo:block font-style="italic">Intern - System and Network Administrator</fo:block>
                 </fo:table-cell>
                 <fo:table-cell text-align="right">
-                  <fo:block font-style="italic">Mars 2004
+                  <fo:block font-style="italic">March 2005
                                     -
 
-                                    Juillet 2004</fo:block>
+                                    September 2005</fo:block>
                 </fo:table-cell>
               </fo:table-row>
               <fo:table-row>
@@ -694,7 +634,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Conception et réalisation d'un site web dynamique (PHP / MySQL)</fo:block>
+                        <fo:block font-size="80%">Network infrastructure desgin for game servers.</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -702,7 +642,7 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Optimisation du référencement commercial</fo:block>
+                        <fo:block font-size="80%">High Availability and Security.</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                     <fo:list-item>
@@ -710,7 +650,74 @@
                         <fo:block>›</fo:block>
                       </fo:list-item-label>
                       <fo:list-item-body start-indent="body-start()">
-                        <fo:block font-size="80%">Techniques de communication</fo:block>
+                        <fo:block font-size="80%">Exchange 2003 Domain and Mail Services.</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Database system migration, and software impacts.</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Interactive 3D world designs (Virtools)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+        </fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:table keep-together.within-column="always">
+            <fo:table-column column-number="1" column-width="66%"/>
+            <fo:table-column column-number="2" column-width="34%"/>
+            <fo:table-body>
+              <fo:table-row font-weight="bold">
+                <fo:table-cell text-align="left">
+                  <fo:block><fo:basic-link external-destination="url('http://www.nice-antiques.com/')" text-decoration="underline">Nice-Antiques.com</fo:basic-link>
+                                [Art / Antique]
+                            </fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>Nice - France</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Intern - WebMaster</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block font-style="italic">March 2004
+                                    -
+
+                                    July 2004</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Design and develop a dynamic website. (PHP / MYSQL)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Commercial referencing campaign optimization.</fo:block>
                       </fo:list-item-body>
                     </fo:list-item>
                   </fo:list-block>
@@ -721,7 +728,7 @@
         </fo:block>
       </fo:block-container>
       <fo:block-container space-before="12pt" id="education">
-        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Formation</fo:block>
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Education</fo:block>
         <fo:block space-before="4pt" space-after="8pt">
           <fo:table keep-together.within-column="always">
             <fo:table-column column-number="1" column-width="66%"/>
@@ -946,7 +953,7 @@
         </fo:block>
       </fo:block-container>
       <fo:block-container space-before="12pt" id="languages">
-        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Langues</fo:block>
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Languages</fo:block>
         <fo:block space-before="4pt" space-after="8pt">
           <fo:list-block margin-left="12pt" font-size="80%">
             <fo:list-item>
@@ -977,129 +984,132 @@
         </fo:block>
       </fo:block-container>
       <fo:block-container space-before="12pt" id="skills">
-        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Compétences</fo:block>
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Skills</fo:block>
         <fo:block space-before="4pt" space-after="8pt">
-          <fo:block space-before="4pt" font-weight="bold">Fonctionnelles</fo:block>
-          <fo:block font-size="80%">Gestion de projet / Scrum Master;
-            Conduite de réunion;
-            Pédagogie / Vulgarisation;
-            Rédaction publications scientifiques;
-            Présentation en public;
-            Veille technologique;
-            </fo:block>
-          <fo:block space-before="4pt" font-weight="bold">Langages</fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Functionnal</fo:block>
+          <fo:block font-size="80%">Project Management / ScrumMaster;
+                Meeting management;
+                Pedagogy / Popularizaion;
+                Scienfitic publication writeup;
+                Public talks;
+                Technology Watch;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Languages</fo:block>
           <fo:block font-size="80%">Go;
-            JavaScript / ES6;
-            Java;
-            Ruby;
-            Python;
-            Scala;
-            C/C++;
-            PHP;
-            XML / XSLT;
-            XML Schema / Relax NG;
-            XSL-FO;
-            Qt / KDE;
-            C# (.Net);
-            ASM (x86, ARM7);
-            </fo:block>
-          <fo:block space-before="4pt" font-weight="bold">Base de données</fo:block>
-          <fo:block font-size="80%">MySQL / MariaDB;
-            PostgreSQL;
-            MongoDB;
-            RethinkDB;
-            CouchDB;
-            CouchBase;
-            Redis;
-            Neo4j;
-            Hadoop / HBase;
-            Oracle;
-            SQL Server;
-            </fo:block>
-          <fo:block space-before="4pt" font-weight="bold">Système d'exploitation</fo:block>
-          <fo:block font-size="80%">Linux (OS courant : ArchLinux);
-            MacOS X;
-            Windows;
-            </fo:block>
-          <fo:block space-before="4pt" font-weight="bold">Environnements de développement</fo:block>
+                JavaScript / ES6;
+                Java;
+                Ruby;
+                Python;
+                XML / XSLT;
+                XML Schema / Relax NG;
+                XSL-FO;
+                Qt / KDE;
+                C# (.Net);
+                ASM (x86, ARM7);
+                Scala;
+                C/C++;
+                PHP;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Databases</fo:block>
+          <fo:block font-size="80%">MongoDB;
+                RethinkDB;
+                CouchDB;
+                CouchBase;
+                Redis;
+                Neo4j;
+                MySQL / MariaDB;
+                PostgreSQL;
+                Hadoop / HBase;
+                Oracle;
+                SQL Server;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Operating Systems</fo:block>
+          <fo:block font-size="80%">Linux (Daily usage : ArchLinux);
+                MacOS X;
+                Windows;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Development Environment</fo:block>
           <fo:block font-size="80%">Git / Mercurial;
-            SVN / CVS;
-            CMake;
-            VisualStudio;
-            </fo:block>
-          <fo:block space-before="4pt" font-weight="bold">DevOps</fo:block>
-          <fo:block font-size="80%">LXC / Docker;
-            Chef / Puppet / Ansible / SaltStack;
-            Logstash / Fluentd / Graylog;
-            ElasticSearch / Kibana;
-            Sentry;
-            Consul / Etcd;
-            Vault;
-            Jenkins / TravisCI / DroneIO / GitlabCI;
-            Kubernetes / Deis;
-            CoreOS / Rancher;
-            Prometheus / Gafana;
-            </fo:block>
+                SVN / CVS;
+                CMake;
+                VisualStudio;
+                </fo:block>
           <fo:block space-before="4pt" font-weight="bold">Web Framework</fo:block>
           <fo:block font-size="80%">Node.js / Express;
-            MeteorJS;
-            Ruby on Rails;
-            Django;
-            Play! Framework;
-            Microformats;
-            </fo:block>
+                MeteorJS;
+                Ruby on Rails;
+                Django;
+                Play! Framework;
+                Microformats;
+                </fo:block>
           <fo:block space-before="4pt" font-weight="bold">Frontend / UX</fo:block>
           <fo:block font-size="80%">ES6 / ES7 / TypeScript;
-            AngularJS 1 / 2;
-            React / Flux;
-            RxJS;
-            CoffeeScript;
-            Backbone.JS;
-            Grunt / Gulp / WebPack;
-            HTML5;
-            CSS3 / SASS / LESS;
-            Twitter Bootstrap;
-            Google Material Design;
-            </fo:block>
-          <fo:block space-before="4pt" font-weight="bold">Data Scientism</fo:block>
-          <fo:block font-size="80%">D3;
-            Machine Learning (SVM, PNN, RF, GBM);
-            H2o;
-            R;
-            Protégé;
-            OWL;
-            JSON-LD;
-            </fo:block>
-          <fo:block space-before="4pt" font-weight="bold">Sécurité</fo:block>
+                AngularJS 1 / 2;
+                React / Flux;
+                RxJS;
+                CoffeeScript;
+                Backbone.JS;
+                Grunt / Gulp / WebPack;
+                HTML5;
+                CSS3 / SASS / LESS;
+                Twitter Bootstrap;
+                Google Material Design;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">DevOps</fo:block>
+          <fo:block font-size="80%">LXC / Docker;
+                Chef / Puppet / Ansible / SaltStack;
+                Logstash / Fluentd / Graylog;
+                Sentry;
+                Consul / Etcd;
+                Vault;
+                Jenkins / TravisCI / DroneIO / GitlabCI;
+                Kubernetes / Deis;
+                CoreOS / Rancher;
+                Prometheus / Gafana;
+                Riemann.io;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Data Engineering</fo:block>
+          <fo:block font-size="80%">Machine Learning (SVM, PNN, RF, GBM);
+                H2o;
+                SciKit Learn;
+                Protégé;
+                R;
+                Python / Jupyter / Pandas;
+                Qlikview;
+                Maltego;
+                ElasticSearch / LogStash / Kibana (ELK);
+                Linkurious;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Security</fo:block>
           <fo:block font-size="80%">Cuckoo Sandbox / VMCloak;
-            Suricata / Bro / OSSEC-HIDS;
-            Honeypots (Cowerie / Kippo);
-            DNS / SMTP Sinkhole;
-            </fo:block>
-          <fo:block space-before="4pt" font-weight="bold">Blockchain</fo:block>
+                Suricata / Bro / OSSEC-HIDS;
+                Honeypots (Cowerie / Kippo);
+                DNS / SMTP Sinkhole;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">BlockChain</fo:block>
           <fo:block font-size="80%">Ethereum;
-            </fo:block>
-          <fo:block space-before="4pt" font-weight="bold">Embarqué</fo:block>
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Embedded</fo:block>
           <fo:block font-size="80%">Raspberry PI 2 / 3;
-            Raspberry PI 1 / Zero;
-            Electronique pratique basique;
-            </fo:block>
+                Raspberry PI 1 / Zero;
+                Basic electronic knowledge;
+                </fo:block>
           <fo:block space-before="4pt" font-weight="bold">Java</fo:block>
           <fo:block font-size="80%">J2EE;
-            Spring (Core, MVC, Security, Data);
-            Ant / Maven / SBT / Gradle;
-            JPA / Hibernate;
-            JUnit / TestNG;
-            JBoss AS / Tomcat;
-            Apache Storm;
-            Apache Spark;
-            Apache Kafka;
-            Zookeeper;
-            </fo:block>
+                Spring (Core, MVC, Security, Data);
+                Ant / Maven / SBT / Gradle;
+                JPA / Hibernate;
+                JUnit / TestNG;
+                JBoss AS / Tomcat;
+                Apache Storm;
+                Apache Spark;
+                Apache Kafka;
+                Zookeeper;
+                </fo:block>
         </fo:block>
       </fo:block-container>
       <fo:block-container space-before="12pt" id="social" keep-together="always">
-        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Liens</fo:block>
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Links</fo:block>
         <fo:block space-before="4pt" space-after="8pt" font-size="80%">
           <fo:list-block margin-left="12pt">
             <fo:list-item>
@@ -1146,7 +1156,7 @@
         </fo:block>
       </fo:block-container>
       <fo:block-container space-before="12pt" id="misc" keep-together="always">
-        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Autres Activités hors Curriculum</fo:block>
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Other activities</fo:block>
         <fo:block space-before="4pt" space-after="8pt" font-size="80%">
           <fo:list-block margin-left="12pt">
             <fo:list-item>

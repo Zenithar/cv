@@ -11,7 +11,8 @@
 
     <xsl:output omit-xml-declaration="no" method="xml" encoding="UTF-8" indent="yes"/>
 
-    <xsl:param name="OutLang">fr</xsl:param>
+    <xsl:param name="current-date" />
+    <xsl:param name="version" />
 
     <!-- Functions -->
     <xsl:template name="formatDate">
@@ -43,51 +44,135 @@
                     <xsl:choose>
 
                         <xsl:when test="$month = 1">
-                            <xsl:text>Janvier</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>January</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Janvier</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
 
                         <xsl:when test="$month = 2">
-                            <xsl:text>Février</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>February</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Février</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
 
                         <xsl:when test="$month = 3">
-                            <xsl:text>Mars</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>March</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Mars</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
 
                         <xsl:when test="$month = 4">
-                            <xsl:text>Avril</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>April</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Avril</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
 
                         <xsl:when test="$month = 5">
-                            <xsl:text>Mai</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>May</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Mai</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
 
                         <xsl:when test="$month = 6">
-                            <xsl:text>Juin</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>June</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Juin</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
 
                         <xsl:when test="$month = 7">
-                            <xsl:text>Juillet</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>July</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Juillet</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
 
                         <xsl:when test="$month = 8">
-                            <xsl:text>Aout</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>August</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Août</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
 
                         <xsl:when test="$month = 9">
-                            <xsl:text>Septembre</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>September</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Septembre</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
 
                         <xsl:when test="$month = 10">
-                            <xsl:text>Octobre</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>October</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Octobre</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
 
                         <xsl:when test="$month = 11">
-                            <xsl:text>Novembre</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>November</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Novembre</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
 
                         <xsl:when test="$month = 12">
-                            <xsl:text>Décembre</xsl:text>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:text>December</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:text>Décembre</xsl:text>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:when>
                     </xsl:choose>
                     <xsl:text> </xsl:text>
@@ -99,7 +184,6 @@
     </xsl:template>
 
     <xsl:template match="zorg:i18n">
-
         <xsl:if test="lang($OutLang)">
             <xsl:value-of select="."/>
         </xsl:if>
@@ -113,16 +197,21 @@
         </fo:block>
 
         <fo:table space-before="4pt">
-            <fo:table-column column-width="50%"/>
-            <fo:table-column column-width="50%"/>
+            <fo:table-column column-width="80%"/>
+            <fo:table-column column-width="20%"/>
             <fo:table-body>
                 <fo:table-row>
                     <fo:table-cell text-align="left">
-                        <fo:block><xsl:value-of select="zorg:address/zorg:city"/>
-                            -
-                            <xsl:value-of select="zorg:address/zorg:country"/>
-                            &#8226;
-                            <xsl:value-of select="zorg:phone"/>
+                        <fo:block>
+                          <xsl:choose>
+                            <xsl:when test="$OutLang = 'en'">
+                              <xsl:value-of select="zorg:birthday/@age" /> yo,
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:value-of select="zorg:birthday/@age" /> ans,
+                            </xsl:otherwise>
+                          </xsl:choose>
+                          <xsl:apply-templates select="zorg:nationality/zorg:i18n"/>, <xsl:apply-templates select="zorg:civilState/zorg:i18n"/> &#8226; <xsl:value-of select="zorg:address/zorg:city"/> - <xsl:value-of select="zorg:address/zorg:country"/> &#8226; <xsl:value-of select="zorg:phone"/>
                         </fo:block>
                     </fo:table-cell>
                     <fo:table-cell text-align="right">
@@ -140,15 +229,29 @@
 
 <xsl:template match="zorg:cv/zorg:expectations">
   <fo:block font-size="80%">
-      Profils de postes souhaités :
-      <xsl:for-each select="zorg:jobs/zorg:item/zorg:i18n">
-          <xsl:value-of select="."/>;
+      <xsl:choose>
+        <xsl:when test="$OutLang = 'en'">
+          <xsl:text>Jobs expected : </xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:text>Profils de postes souhaités : </xsl:text>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:for-each select="zorg:jobs/zorg:item">
+          <xsl:apply-templates select="zorg:i18n"/>;
       </xsl:for-each>
   </fo:block>
   <fo:block font-size="80%">
-      Domaines souhaités : 
-      <xsl:for-each select="zorg:domains/zorg:item/zorg:i18n">
-          <xsl:value-of select="."/>;
+      <xsl:choose>
+        <xsl:when test="$OutLang = 'en'">
+          <xsl:text>Domains expected : </xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:text>Domaines souhaités : </xsl:text>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:for-each select="zorg:domains/zorg:item">
+          <xsl:apply-templates select="zorg:i18n"/>;
       </xsl:for-each>
   </fo:block>
 </xsl:template>
@@ -167,13 +270,11 @@
                         <fo:table-cell text-align="left">
                             <fo:block>
                                 <fo:basic-link external-destination="url('{zorg:url}')" text-decoration="underline"><xsl:value-of select="zorg:name"/></fo:basic-link>
+                                [<xsl:apply-templates select="zorg:domain/zorg:i18n"/>]
                             </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="right">
-                            <fo:block><xsl:value-of select="zorg:location/zorg:city"/>
-                                -
-
-                                <xsl:value-of select="zorg:location/zorg:country"/></fo:block>
+                            <fo:block><xsl:value-of select="zorg:location/zorg:city"/> - <xsl:value-of select="zorg:location/zorg:country"/></fo:block>
                         </fo:table-cell>
                     </fo:table-row>
 
@@ -296,10 +397,26 @@
 <xsl:template match="zorg:cv/zorg:qualifications">
 
     <xsl:for-each select="zorg:qualification">
-        <fo:block space-before="4pt" font-weight="bold"><xsl:value-of select="@name"/></fo:block>
+        <fo:block space-before="4pt" font-weight="bold">
+          <xsl:choose>
+            <xsl:when test="zorg:name/zorg:i18n">
+              <xsl:apply-templates select="zorg:name/zorg:i18n"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="zorg:name" />
+            </xsl:otherwise>
+          </xsl:choose>
+        </fo:block>
         <fo:block font-size="80%">
-            <xsl:for-each select="zorg:item">
-                <xsl:value-of select="."/>;
+            <xsl:for-each select="zorg:items/zorg:item">
+              <xsl:choose>
+                <xsl:when test="zorg:i18n">
+                  <xsl:apply-templates select="zorg:i18n"/>;
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="." />;
+                </xsl:otherwise>
+              </xsl:choose>
             </xsl:for-each>
         </fo:block>
     </xsl:for-each>
@@ -399,13 +516,28 @@
                     <fo:block space-before="0.67em" border="1px solid" space-before.minimum="0.5em" space-before.optimum="0.67em" space-before.maximum="0.92em" space-after.minimum="0.5em" space-after.optimum="0.67em" space-after.maximum="0.92em"/>
 
                     <fo:table>
-                        <fo:table-column column-width="50%"/>
-                        <fo:table-column column-width="50%"/>
+                        <fo:table-column column-width="33%"/>
+                        <fo:table-column column-width="34%"/>
+                        <fo:table-column column-width="33%"/>
                         <fo:table-body>
                             <fo:table-row>
                                 <fo:table-cell text-align="left">
                                     <fo:block>
                                         <fo:basic-link external-destination="url('http://zenithar.org/')">http://zenithar.org/</fo:basic-link>
+                                    </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="center">
+                                    <fo:block>
+                                        <xsl:choose>
+                                          <xsl:when test="$OutLang = 'en'">
+                                            <xsl:text>Last generated on </xsl:text>
+                                          </xsl:when>
+                                          <xsl:otherwise>
+                                            <xsl:text>Généré le </xsl:text>
+                                          </xsl:otherwise>
+                                        </xsl:choose>
+                                        <xsl:value-of select="$current-date"/>
+                                        <fo:basic-link external-destination="url('https://github.com/Zenithar/cv/commit/{$version}')"> (<xsl:value-of select="$version"/>)</fo:basic-link>
                                     </fo:block>
                                 </fo:table-cell>
                                 <fo:table-cell text-align="right">
@@ -421,23 +553,48 @@
 
             <fo:flow flow-name="xsl-region-body" font-size="80%">
 
-                <!-- Header -->
-                <fo:block-container>
-                    <xsl:apply-templates select="zorg:cv/zorg:personalData"/>
-                </fo:block-container>
-                <!-- /Header -->
+                <fo:table>
+                  <fo:table-column column-width="80%" />
+                  <fo:table-column column-width="20%" />
+                  <fo:table-body>
+                    <fo:table-row>
 
-                <!-- Title -->
-                <fo:block-container space-before="12pt" id="title">
-                    <fo:block text-align="center" font-weight="bold" space-before="4pt" space-after="0pt" font-size="150%">
-                        <xsl:apply-templates select="zorg:cv/zorg:title/zorg:i18n"/>
-                    </fo:block>
-                </fo:block-container>
-                <!-- /Title -->
+                      <fo:table-cell>
+                        <!-- Header -->
+                        <fo:block-container>
+                            <xsl:apply-templates select="zorg:cv/zorg:personalData"/>
+                        </fo:block-container>
+                        <!-- /Header -->
+
+                        <!-- Title -->
+                        <fo:block-container space-before="20pt" id="title">
+                            <fo:block text-align="center" font-weight="bold" space-before="4pt" space-after="0pt" font-size="150%">
+                                <xsl:apply-templates select="zorg:cv/zorg:title/zorg:i18n"/>
+                            </fo:block>
+                        </fo:block-container>
+                        <!-- /Title -->
+                      </fo:table-cell>
+                      <fo:table-cell>
+                        <fo:block text-align="right">
+                          <fo:external-graphic content-height="35mm" scaling="uniform" src="../src/id.jpg"/>
+                        </fo:block>
+                      </fo:table-cell>
+                    </fo:table-row>
+                  </fo:table-body>
+                </fo:table>
 
                 <!-- Résumé -->
                 <fo:block-container space-before="4pt" id="resume">
-                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Résumé</fo:block>
+                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">
+                      <xsl:choose>
+                        <xsl:when test="$OutLang = 'en'">
+                          <xsl:text>Presentation</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:text>Résumé</xsl:text>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </fo:block>
                     <fo:block text-align="justify" font-style="italic" space-before="4pt" space-after="8pt">
                         <xsl:apply-templates select="zorg:cv/zorg:resume/zorg:i18n"/>
                     </fo:block>
@@ -454,7 +611,16 @@
 
                 <!-- Experiences -->
                 <fo:block-container space-before="12pt" id="experiences">
-                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Expérience Professionnelle</fo:block>
+                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">
+                      <xsl:choose>
+                        <xsl:when test="$OutLang = 'en'">
+                          <xsl:text>Professional Experience</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:text>Expérience Professionnelle</xsl:text>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </fo:block>
 
                     <xsl:apply-templates select="zorg:cv/zorg:professionalSummary"/>
                 </fo:block-container>
@@ -462,7 +628,16 @@
 
                 <!-- Formations -->
                 <fo:block-container space-before="12pt" id="education">
-                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Formation</fo:block>
+                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">
+                      <xsl:choose>
+                        <xsl:when test="$OutLang = 'en'">
+                          <xsl:text>Education</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:text>Formation</xsl:text>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </fo:block>
 
                     <xsl:apply-templates select="zorg:cv/zorg:schoolSummary"/>
                 </fo:block-container>
@@ -470,7 +645,16 @@
 
                 <!-- Certification -->
                 <fo:block-container space-before="12pt" id="certifications">
-                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Certifications</fo:block>
+                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">
+                      <xsl:choose>
+                        <xsl:when test="$OutLang = 'en'">
+                          <xsl:text>Certifications</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:text>Certifications</xsl:text>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </fo:block>
                     <fo:block space-before="4pt" space-after="8pt">
                         <xsl:apply-templates select="zorg:cv/zorg:certifications"/>
                     </fo:block>
@@ -479,7 +663,16 @@
 
                 <!-- languages -->
                 <fo:block-container space-before="12pt" id="languages">
-                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Langues</fo:block>
+                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">
+                      <xsl:choose>
+                        <xsl:when test="$OutLang = 'en'">
+                          <xsl:text>Languages</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:text>Langues</xsl:text>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </fo:block>
                     <fo:block space-before="4pt" space-after="8pt">
                         <xsl:apply-templates select="zorg:cv/zorg:languages"/>
                     </fo:block>
@@ -488,7 +681,16 @@
 
                 <!-- competences / skills -->
                 <fo:block-container space-before="12pt" id="skills">
-                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Compétences</fo:block>
+                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">
+                      <xsl:choose>
+                        <xsl:when test="$OutLang = 'en'">
+                          <xsl:text>Skills</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:text>Compétences</xsl:text>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </fo:block>
                     <fo:block space-before="4pt" space-after="8pt">
                         <xsl:apply-templates select="zorg:cv/zorg:qualifications"/>
                     </fo:block>
@@ -497,7 +699,16 @@
 
                 <!-- Social -->
                 <fo:block-container space-before="12pt" id="social" keep-together="always">
-                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Liens</fo:block>
+                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">
+                      <xsl:choose>
+                        <xsl:when test="$OutLang = 'en'">
+                          <xsl:text>Links</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:text>Liens</xsl:text>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </fo:block>
                     <fo:block space-before="4pt" space-after="8pt" font-size="80%">
                         <xsl:apply-templates select="zorg:cv/zorg:urls"/>
                     </fo:block>
@@ -506,7 +717,16 @@
 
                 <!-- Misc -->
                 <fo:block-container space-before="12pt" id="misc" keep-together="always">
-                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Autres Activités hors Curriculum</fo:block>
+                    <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">
+                      <xsl:choose>
+                        <xsl:when test="$OutLang = 'en'">
+                          <xsl:text>Other activities</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:text>Autres Activités hors Curriculum</xsl:text>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </fo:block>
                     <fo:block space-before="4pt" space-after="8pt" font-size="80%">
                         <xsl:apply-templates select="zorg:cv/zorg:misc"/>
                     </fo:block>

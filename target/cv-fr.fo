@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:zorg="http://about.zenithar.org" writing-mode="lr-tb">
+  <fo:layout-master-set>
+    <fo:simple-page-master master-name="A4" page-width="210mm" page-height="297mm" margin-top="1cm" margin-bottom="1cm" margin-left="1cm" margin-right="1cm">
+      <fo:region-body margin-bottom="20mm"/>
+      <fo:region-after region-name="page-footer" extent="30mm" display-align="after"/>
+    </fo:simple-page-master>
+  </fo:layout-master-set>
+  <fo:page-sequence master-reference="A4">
+    <fo:static-content flow-name="page-footer">
+      <fo:block font-size="6pt" text-align="center" space-after.conditionality="retain" space-after="0.25in">
+        <fo:block space-before="0.67em" border="1px solid" space-before.minimum="0.5em" space-before.optimum="0.67em" space-before.maximum="0.92em" space-after.minimum="0.5em" space-after.optimum="0.67em" space-after.maximum="0.92em"/>
+        <fo:table>
+          <fo:table-column column-width="33%"/>
+          <fo:table-column column-width="34%"/>
+          <fo:table-column column-width="33%"/>
+          <fo:table-body>
+            <fo:table-row>
+              <fo:table-cell text-align="left">
+                <fo:block>
+                  <fo:basic-link external-destination="url('http://zenithar.org/')">http://zenithar.org/</fo:basic-link>
+                </fo:block>
+              </fo:table-cell>
+              <fo:table-cell text-align="center">
+                <fo:block>Généré le 2016-11-20<fo:basic-link external-destination="url('https://github.com/Zenithar/cv/commit/1fcac87')"> (1fcac87)</fo:basic-link></fo:block>
+              </fo:table-cell>
+              <fo:table-cell text-align="right">
+                <fo:block><fo:page-number/>
+                                        /
+                                        <fo:page-number-citation ref-id="last-page-marker"/></fo:block>
+              </fo:table-cell>
+            </fo:table-row>
+          </fo:table-body>
+        </fo:table>
+      </fo:block>
+    </fo:static-content>
+    <fo:flow flow-name="xsl-region-body" font-size="80%">
+      <fo:table>
+        <fo:table-column column-width="80%"/>
+        <fo:table-column column-width="20%"/>
+        <fo:table-body>
+          <fo:table-row>
+            <fo:table-cell>
+              <fo:block-container>
+                <fo:block border-after-style="double" border-after-width="medium" font-size="200%" letter-spacing=".15em" font-variant="small-caps">Thibault Normand</fo:block>
+                <fo:table space-before="4pt">
+                  <fo:table-column column-width="80%"/>
+                  <fo:table-column column-width="20%"/>
+                  <fo:table-body>
+                    <fo:table-row>
+                      <fo:table-cell text-align="left">
+                        <fo:block>33 ans,
+                            Français, Marié • Toulouse - France • +33 668 666 396</fo:block>
+                      </fo:table-cell>
+                      <fo:table-cell text-align="right">
+                        <fo:block>
+                          <fo:basic-link color="blue" text-decoration="underline" external-destination="url('mailto:thibault.normand@gmail.com')">thibault.normand@gmail.com</fo:basic-link>
+                        </fo:block>
+                      </fo:table-cell>
+                    </fo:table-row>
+                  </fo:table-body>
+                </fo:table>
+              </fo:block-container>
+              <fo:block-container space-before="20pt" id="title">
+                <fo:block text-align="center" font-weight="bold" space-before="4pt" space-after="0pt" font-size="150%">Application Security Engineer / Full Stack Developer / DevSecOps</fo:block>
+              </fo:block-container>
+            </fo:table-cell>
+            <fo:table-cell>
+              <fo:block text-align="right">
+                <fo:external-graphic content-height="35mm" scaling="uniform" src="../src/id.jpg"/>
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+        </fo:table-body>
+      </fo:table>
+      <fo:block-container space-before="4pt" id="resume">
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Résumé</fo:block>
+        <fo:block text-align="justify" font-style="italic" space-before="4pt" space-after="8pt">Développeur de formation et passionné de sécurité, j'aime traiter des projets alliant ces deux compétences.
+      Mon expérience en développement, ainsi que ma curiosité pour les technologies me permet d'avoir un regard tourné vers l'avenir.
+      J'attache de l'importance au partage des connaissances et compétences au sein de mon environnement de travail. Avide
+      de connaissances, je recherche des postes permettant l'apprentissage et l'exploitation de nouveaux savoirs.</fo:block>
+      </fo:block-container>
+      <fo:block-container space-before="4pt" id="expectations">
+        <fo:block text-align="justify" font-style="italic" space-before="4pt" space-after="8pt">
+          <fo:block font-size="80%">Profils de postes souhaités : Architecte logiciel;
+      Développeur Full-Stack;
+      Expertise Technique;
+      Conseil;
+      </fo:block>
+          <fo:block font-size="80%">Domaines souhaités : Sécurité;
+      Big Data;
+      Machine Learning;
+      BlockChain;
+      IoT;
+      </fo:block>
+        </fo:block>
+      </fo:block-container>
+      <fo:block-container space-before="12pt" id="experiences">
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Expérience Professionnelle</fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:table keep-together.within-column="always">
+            <fo:table-column column-number="1" column-width="66%"/>
+            <fo:table-column column-number="2" column-width="34%"/>
+            <fo:table-body>
+              <fo:table-row font-weight="bold">
+                <fo:table-cell text-align="left">
+                  <fo:block><fo:basic-link external-destination="url('')" text-decoration="underline">N/C</fo:basic-link>
+                                [Recherche et Développement Sécurité]
+                            </fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>Toulouse - France</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Application Security Engineer / Développeur Full Stack / DevSecOps</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block font-style="italic">Octobre 2013
+                                    -
+
+                                     </fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Protocole de communication d'alertes malware : détéction, bulletins IOC. (Go, ElasticSearch, RabbitMQ, Protobuf, Snappy, WebHook)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Transformateurs locaux Maltego. (Go, Neo4j, ElasticSearch)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Plateforme d'analyse de malware automatisée pour extraction d'IoC. (Go, RethinkDB, RabbitMQ, Docker, Cuckoo, VirusTotal, Yara, AngularJS 2)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Etude des régroupements de données IoC / observables "Cyber Threat Analyse" (R, Neo4j, ElasticSearch, Machine learning, Clustering)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Protocole d'échange de malwares pour communication honeypot, sandbox, antivirus. (Protobuf, Compression, Crypto)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Plateforme de centralisation d'indicateurs pour analyse sécurité "Technical Threat Intelligence". (Go, RabbitMQ, ElasticSearch, Neo4j, AngularJS)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Plateforme de soumission et de séquestre de malwares. (Go, RabbitMQ, MongoDB)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Plateforme de centralisation et corrélation des bulletins sécurité. (Go, RabbitMQ, MongoDB, AngularJS)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Plateforme d'analyse de données discrètes pour classification automatisée. (Go, RabbitMQ, MongoDB, SciKit-Learn, Machine learning)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Conception et réalisation d'un système embarqué type "boîte blanche" pour décontamination virale (Go, AngularJS, Qt, ZMQ, Docker)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Plateforme d'harmonisation et d'échanges pour SIEM (Go, MongoDB, AngularJS)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Conception et réalisation de microservices : email (composition, envoi, signature), identification / autorisation, jetons, licences (Go, gRPC, Consul, Vault, Docker, Rancher)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Tableaux de bords et métrologie logiciel (Go, Prometheus, InfluxDB, ElasticSearch, Grafana)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Audit qualité et sécurité (Java / J2EE)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Encadrement stagiaires.</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+        </fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:table keep-together.within-column="always">
+            <fo:table-column column-number="1" column-width="66%"/>
+            <fo:table-column column-number="2" column-width="34%"/>
+            <fo:table-body>
+              <fo:table-row font-weight="bold">
+                <fo:table-cell text-align="left">
+                  <fo:block><fo:basic-link external-destination="url('http://www.infotel.com')" text-decoration="underline">INFOTEL</fo:basic-link>
+                                [Recherche et Développement]
+                            </fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>Toulouse - France</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Ingénieur R&amp;D / Chef de Projet</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block font-style="italic">Janvier 2010
+                                    -
+
+                                    Octobre 2013</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Plateforme de dépot sécurisé de fichier à haute valeur probante. (RabbitMQ, Protobuf, Scala/AKKA, Java, Spring, ElasticSearch, AngularJS)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Conception et réalisation d'un SSO basé sur OAUTH 2.0 (Java, Spring, JWT, PKI, PKCS#11, HOTP)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Développements d'applications Javascript (jQuery, Backbone.JS, CoffeeScript).</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Industrialisation de l'intégration continue (Git, Jenkins, Sonar)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Industrialisation de la chaîne documentaire (Git, Jenkins, Maven, Docbook5, XSLT, FOP)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Interfaces de gestion de processus DB2 / Z/OS (Java, Portlets)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Revue de code qualité et sécurité (Java, J2EE)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Maintenance de produits (ClearCase, Java, Struts2, Eclipse RCP)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Encadrement stagiaires.</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+        </fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:table keep-together.within-column="always">
+            <fo:table-column column-number="1" column-width="66%"/>
+            <fo:table-column column-number="2" column-width="34%"/>
+            <fo:table-body>
+              <fo:table-row font-weight="bold">
+                <fo:table-cell text-align="left">
+                  <fo:block><fo:basic-link external-destination="url('http://www.scassi.com')" text-decoration="underline">SCASSI Conseil</fo:basic-link>
+                                [Sécurité]
+                            </fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>Toulouse - France</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Ingénieur Sécurité</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block font-style="italic">Juillet 2008
+                                    -
+
+                                    Décembre 2009</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Conception et réalisation d'un outil d'analyse de risques basé sur la méthodologie EBIOS (SOA, J2EE, .Net)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Généralisation des méthodes d'analyse de risques (UML)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Audit de code (Java/J2EE, C/C++, PHP)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Reverse engineering, analyse de malware</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">SOC (Security Operating Center) auprès d'un grand compte (Gestion des événements sécurité, gestion des requêtes sécurité, maintient en condition opérationnelle)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Instructeur pour des ateliers techniques (Virtualisation / Firewall &amp; Contrôles d'accès) auprès d'une vingtaine de personnes</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Stagiaire - Développeur</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block font-style="italic">Octobre 2007
+                                    -
+
+                                    Juin 2008</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Conception et réalisation d'un outil d'analyse de risques basé sur la méthodologie EBIOS (Ruby, RoR)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Administration système et réseau dans un environnement hétérogène</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Penetration Testing sur applications Web J2EE.</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+        </fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:table keep-together.within-column="always">
+            <fo:table-column column-number="1" column-width="66%"/>
+            <fo:table-column column-number="2" column-width="34%"/>
+            <fo:table-body>
+              <fo:table-row font-weight="bold">
+                <fo:table-cell text-align="left">
+                  <fo:block><fo:basic-link external-destination="url('http://www.opencubetech.com/')" text-decoration="underline">Opencube Technologies</fo:basic-link>
+                                [Média Numérique]
+                            </fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>Toulouse - France</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Stagiaire - Développeur</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block font-style="italic">Mars 2007
+                                    -
+
+                                    Septembre 2007</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Réalisation d'une API d'exploitation de format d'échange de sous-titre DFXP. (Qt, C++)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Traitement du signal pour récupération de signaux télétexte. (Qt, C++)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+        </fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:table keep-together.within-column="always">
+            <fo:table-column column-number="1" column-width="66%"/>
+            <fo:table-column column-number="2" column-width="34%"/>
+            <fo:table-body>
+              <fo:table-row font-weight="bold">
+                <fo:table-cell text-align="left">
+                  <fo:block><fo:basic-link external-destination="url('http://www.medes.fr/')" text-decoration="underline">MEDES / IMPS</fo:basic-link>
+                                [Santé / Espace]
+                            </fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>Toulouse - France</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Stagiaire - Développeur</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block font-style="italic">Mars 2006
+                                    -
+
+                                    Août 2006</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Conception et réalisation d'un composant graphique pour afficher des informations géolocalisées. (Java, Eclipse, RCP)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Etat de l'art des systèmes d'informations géolocalisées libre (PostGIS, GRASS)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Architecture réseau, mise en place d'un domaine libre (OpenLDAP, Samba, Kerberos, DHCP, DNS, NTP)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Virtualisation Serveurs (Gentoo, Xen, VMWare)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+        </fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:table keep-together.within-column="always">
+            <fo:table-column column-number="1" column-width="66%"/>
+            <fo:table-column column-number="2" column-width="34%"/>
+            <fo:table-body>
+              <fo:table-row font-weight="bold">
+                <fo:table-cell text-align="left">
+                  <fo:block><fo:basic-link external-destination="url('http://www.karobas.fr/')" text-decoration="underline">Karobas</fo:basic-link>
+                                [Jeux Vidéo]
+                            </fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>Sophia Antipolis - France</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Stagiaire - Administrateur Système et Réseau</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block font-style="italic">Mars 2005
+                                    -
+
+                                    Septembre 2005</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Conception / Restructuration du réseau de l'entreprise</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Haute disponibilité et Sécurité.</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Mise en place d'un domaine Exchange 2003.</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Migration technologique de base de données, et prise en charges des impacts logiciels.</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Modélisation mondes ludo-educatifs (Virtools)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+        </fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:table keep-together.within-column="always">
+            <fo:table-column column-number="1" column-width="66%"/>
+            <fo:table-column column-number="2" column-width="34%"/>
+            <fo:table-body>
+              <fo:table-row font-weight="bold">
+                <fo:table-cell text-align="left">
+                  <fo:block><fo:basic-link external-destination="url('http://www.nice-antiques.com/')" text-decoration="underline">Nice-Antiques.com</fo:basic-link>
+                                [Art / Antiquités]
+                            </fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>Nice - France</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Stagiaire - WebMaster</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block font-style="italic">Mars 2004
+                                    -
+
+                                    Juillet 2004</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Conception et réalisation d'un site web dynamique (PHP / MySQL)</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Optimisation du référencement commercial</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+        </fo:block>
+      </fo:block-container>
+      <fo:block-container space-before="12pt" id="education">
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Formation</fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:table keep-together.within-column="always">
+            <fo:table-column column-number="1" column-width="66%"/>
+            <fo:table-column column-number="2" column-width="34%"/>
+            <fo:table-body>
+              <fo:table-row font-weight="bold">
+                <fo:table-cell text-align="left">
+                  <fo:block>IUP ISI</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>Toulouse
+                                -
+
+                                France</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">M2 ISI - Métamodélisation et Temps réel critique</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>2007
+                                    -
+
+                                    2008</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row space-before="4pt">
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Métamodélisation UML, J2EE, Programmation temps réel (ADA, C, SCADE), Droit</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">M1 Ingénierie des Systèmes Informatiques (ISI)</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>2006
+                                    -
+
+                                    2007</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row space-before="4pt">
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">UML, Programmation distribuée (Java / J2EE, C), Base de données (avancé), XML, Mathématiques, Gestion</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">L3 Ingénierie des Systèmes Informatiques (ISI)</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>2005
+                                    -
+
+                                    2006</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row space-before="4pt">
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">UML, Programmation (Java, C++), Base de données, Mathématiques, Gestion</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+        </fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:table keep-together.within-column="always">
+            <fo:table-column column-number="1" column-width="66%"/>
+            <fo:table-column column-number="2" column-width="34%"/>
+            <fo:table-body>
+              <fo:table-row font-weight="bold">
+                <fo:table-cell text-align="left">
+                  <fo:block>IUT Informatique</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>Nice
+                                -
+
+                                France</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Licence Professionelle, Administration des systèmes et des réseaux (ASR)</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>2004
+                                    -
+
+                                    2005</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row space-before="4pt">
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Réseau, Administration système (Unix, Windows) / base de données (Oracle), Mathématiques, Gestion, Droit</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">DUT Informatique, Génie Logiciel</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>2002
+                                    -
+
+                                    2004</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row space-before="4pt">
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Réseau, Base de données, C, Java/C++, Programmation système, Mathématiques, Gestion</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+        </fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:table keep-together.within-column="always">
+            <fo:table-column column-number="1" column-width="66%"/>
+            <fo:table-column column-number="2" column-width="34%"/>
+            <fo:table-body>
+              <fo:table-row font-weight="bold">
+                <fo:table-cell text-align="left">
+                  <fo:block>Lycée A. Camus</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>Fréjus
+                                -
+
+                                France</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row>
+                <fo:table-cell text-align="left">
+                  <fo:block font-style="italic">Bac S Sience de l'ingénieur, Spécialité Mathématiques</fo:block>
+                </fo:table-cell>
+                <fo:table-cell text-align="right">
+                  <fo:block>
+                                    -
+
+                                    2002</fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+              <fo:table-row space-before="4pt">
+                <fo:table-cell number-columns-spanned="2">
+                  <fo:list-block margin-left="12pt">
+                    <fo:list-item>
+                      <fo:list-item-label end-indent="label-end()">
+                        <fo:block>›</fo:block>
+                      </fo:list-item-label>
+                      <fo:list-item-body start-indent="body-start()">
+                        <fo:block font-size="80%">Mathématiques, Electronique, Mécanique, Informatique</fo:block>
+                      </fo:list-item-body>
+                    </fo:list-item>
+                  </fo:list-block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+        </fo:block>
+      </fo:block-container>
+      <fo:block-container space-before="12pt" id="certifications">
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Certifications</fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:list-block margin-left="12pt" font-size="80%">
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>›</fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>MCP MS72-215 - Microsoft Windows 2000 Server</fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+          </fo:list-block>
+        </fo:block>
+      </fo:block-container>
+      <fo:block-container space-before="12pt" id="languages">
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Langues</fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:list-block margin-left="12pt" font-size="80%">
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>›</fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>Français: Langue maternelle</fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>›</fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>Anglais: Lu, Ecrit &amp; Parlé</fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>›</fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>Espagnol: Niveau bac</fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+          </fo:list-block>
+        </fo:block>
+      </fo:block-container>
+      <fo:block-container space-before="12pt" id="skills">
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Compétences</fo:block>
+        <fo:block space-before="4pt" space-after="8pt">
+          <fo:block space-before="4pt" font-weight="bold">Fonctionnelles</fo:block>
+          <fo:block font-size="80%">Gestion de projet / Scrum Master;
+                Conduite de réunion;
+                Pédogagie / Vulgarisation;
+                Rédaction publications scientifiques;
+                Présentation en public;
+                Veille technologique;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Langages</fo:block>
+          <fo:block font-size="80%">Go;
+                JavaScript / ES6;
+                Java;
+                Ruby;
+                Python;
+                XML / XSLT;
+                XML Schema / Relax NG;
+                XSL-FO;
+                Qt / KDE;
+                C# (.Net);
+                ASM (x86, ARM7);
+                Scala;
+                C/C++;
+                PHP;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Base de données</fo:block>
+          <fo:block font-size="80%">MongoDB;
+                RethinkDB;
+                CouchDB;
+                CouchBase;
+                Redis;
+                Neo4j;
+                MySQL / MariaDB;
+                PostgreSQL;
+                Hadoop / HBase;
+                Oracle;
+                SQL Server;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Système d'exploitation</fo:block>
+          <fo:block font-size="80%">Linux (OS courant : ArchLinux);
+                MacOS X;
+                Windows;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Environnements de développement</fo:block>
+          <fo:block font-size="80%">Git / Mercurial;
+                SVN / CVS;
+                CMake;
+                VisualStudio;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Web Framework</fo:block>
+          <fo:block font-size="80%">Node.js / Express;
+                MeteorJS;
+                Ruby on Rails;
+                Django;
+                Play! Framework;
+                Microformats;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Frontend / UX</fo:block>
+          <fo:block font-size="80%">ES6 / ES7 / TypeScript;
+                AngularJS 1 / 2;
+                React / Flux;
+                RxJS;
+                CoffeeScript;
+                Backbone.JS;
+                Grunt / Gulp / WebPack;
+                HTML5;
+                CSS3 / SASS / LESS;
+                Twitter Bootstrap;
+                Google Material Design;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">DevOps</fo:block>
+          <fo:block font-size="80%">LXC / Docker;
+                Chef / Puppet / Ansible / SaltStack;
+                Logstash / Fluentd / Graylog;
+                Sentry;
+                Consul / Etcd;
+                Vault;
+                Jenkins / TravisCI / DroneIO / GitlabCI;
+                Kubernetes / Deis;
+                CoreOS / Rancher;
+                Prometheus / Gafana;
+                Riemann.io;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Ingénierie des données</fo:block>
+          <fo:block font-size="80%">Machine Learning (SVM, PNN, RF, GBM);
+                H2o;
+                SciKit Learn;
+                Protégé;
+                R;
+                Python / Jupyter / Pandas;
+                Qlikview;
+                Maltego;
+                ElasticSearch / LogStash / Kibana (ELK);
+                Linkurious;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Sécurité</fo:block>
+          <fo:block font-size="80%">Cuckoo Sandbox / VMCloak;
+                Suricata / Bro / OSSEC-HIDS;
+                Honeypots (Cowerie / Kippo);
+                DNS / SMTP Sinkhole;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">BlockChain</fo:block>
+          <fo:block font-size="80%">Ethereum;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Embarqué</fo:block>
+          <fo:block font-size="80%">Raspberry PI 2 / 3;
+                Raspberry PI 1 / Zero;
+                Electronique de base;
+                </fo:block>
+          <fo:block space-before="4pt" font-weight="bold">Java</fo:block>
+          <fo:block font-size="80%">J2EE;
+                Spring (Core, MVC, Security, Data);
+                Ant / Maven / SBT / Gradle;
+                JPA / Hibernate;
+                JUnit / TestNG;
+                JBoss AS / Tomcat;
+                Apache Storm;
+                Apache Spark;
+                Apache Kafka;
+                Zookeeper;
+                </fo:block>
+        </fo:block>
+      </fo:block-container>
+      <fo:block-container space-before="12pt" id="social" keep-together="always">
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Liens</fo:block>
+        <fo:block space-before="4pt" space-after="8pt" font-size="80%">
+          <fo:list-block margin-left="12pt">
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>›</fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:basic-link external-destination="url('https://blog.zenithar.org')">Blog</fo:basic-link>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>›</fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:basic-link external-destination="url('http://www.linkedin.com/in/zenithar')">LinkedIn</fo:basic-link>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>›</fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:basic-link external-destination="url('https://github.com/zenithar')">Github</fo:basic-link>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>›</fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:basic-link external-destination="url('http://twitter.com/zenithar')">Twitter</fo:basic-link>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+          </fo:list-block>
+        </fo:block>
+      </fo:block-container>
+      <fo:block-container space-before="12pt" id="misc" keep-together="always">
+        <fo:block border-after-style="solid" border-after-width="thin" font-size="150%">Autres Activités hors Curriculum</fo:block>
+        <fo:block space-before="4pt" space-after="8pt" font-size="80%">
+          <fo:list-block margin-left="12pt">
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>›</fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>Batterie depuis Septembre 2013</fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>›</fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>Saxophone depuis l'âge de 11 ans dont 6 ans en conservatoire</fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>›</fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>Veille technologique (Sécurité, Logiciels, Techniques de management, Neurosciences)</fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+          </fo:list-block>
+        </fo:block>
+      </fo:block-container>
+      <fo:block id="last-page-marker"/>
+    </fo:flow>
+  </fo:page-sequence>
+</fo:root>
