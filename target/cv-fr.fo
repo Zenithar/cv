@@ -22,7 +22,7 @@
                 </fo:block>
               </fo:table-cell>
               <fo:table-cell text-align="center">
-                <fo:block>Généré le 2016-11-20<fo:basic-link external-destination="url('https://github.com/Zenithar/cv/commit/1fcac87')"> (1fcac87)</fo:basic-link></fo:block>
+                <fo:block>Généré le 2016-11-20<fo:basic-link external-destination="url('https://github.com/Zenithar/cv/commit/ddff472')"> (ddff472)</fo:basic-link></fo:block>
               </fo:table-cell>
               <fo:table-cell text-align="right">
                 <fo:block><fo:page-number/>
